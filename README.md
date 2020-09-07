@@ -1,5 +1,5 @@
 # Safety@work for iOS
-![Safety@Work header](/src/xcode/readmeImages/header.png)
+![Safety@Work header](/readmeImages/header.png)
 
 [![Swift Package Manager compatible](https://img.shields.io/badge/SPM-%E2%9C%93-brightgreen.svg?style=flat)](https://github.com/apple/swift-package-manager) 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -64,13 +64,13 @@ Proxy Class generation for Odata service are developed by SAP Cloud Platform SDK
 The Project takes advantage on classes from DP3T open-source project (folder Sources), 
 dependencies are managed with Swift Package dependencies, you can extract SCP for iOS SDK framework from the Assistant application
 
-![Export frameworks](src/xcode/readmeImages/frameworks.png)
+![Export frameworks](readmeImages/frameworks.png)
 
 and import in project Frameworks folder.
 
 You have to turn-on some capabilities
 
-![Capabilities](src/xcode/readmeImages/capabilities.png)
+![Capabilities](readmeImages/capabilities.png)
 
 Application leverage on:
 
@@ -140,7 +140,7 @@ If an employee is infected by Covid-19 and sent mail to HR department, the appli
 
 If two or more employees doesn't respect safety distance a notification appear on employee device.
 
-![Notification](src/xcode/readmeImages/notification.png)
+![Notification](readmeImages/notification.png)
 
 When employees meet each others in a meeting room or a common space where is present a bluetooth beacon,  iPhone send to backend **anonymously** that a new employee enter in a meeting room or in a common space.
 
@@ -149,19 +149,19 @@ In this way on the backend facility administrator knows in real time how many pe
 ## Screenshot
 
 ### Onboarding step 1 
-![Onboarding](src/xcode/readmeImages/onboarding1.png)
+![Onboarding](readmeImages/onboarding1.png)
 ### Onboarding step 2 
-![Onboarding](src/xcode/readmeImages/onboarding2.png)
+![Onboarding](readmeImages/onboarding2.png)
 ### Onboarding step 3 
-![Onboarding](src/xcode/readmeImages/onboarding3.png)
+![Onboarding](readmeImages/onboarding3.png)
 ### Onboarding step 4 
-![Onboarding](src/xcode/readmeImages/onboarding4.png)
+![Onboarding](readmeImages/onboarding4.png)
 
 ### Main  
-![Main](src/xcode/readmeImages/MainActive.png)
+![Main](readmeImages/MainActive.png)
 
 ### Main Infected
-![Infected](src/xcode/readmeImages/Infected.png)
+![Infected](readmeImages/Infected.png)
 
 
 
@@ -174,11 +174,11 @@ SCP Mobile Services app configuration
 =====================================
 On mobile services a new `Native application` must be created and linked to the existing project. Below picture shows the application available within SCP Mobile services.
 
-![Mobile services apps page](src/xcode/readmeImages/ms01_scpms_main.png)
+![Mobile services apps page](readmeImages/ms01_scpms_main.png)
 
 That application must have following feature assigned:
 
-![Native app assigned features](src/xcode/readmeImages/ms02_app_details_features.png)
+![Native app assigned features](readmeImages/ms02_app_details_features.png)
 
 - **Mobile client log upload** - in order to submit all logs stored in mobile app;
   
@@ -192,7 +192,7 @@ That application must have following feature assigned:
 
 About **Mobile connectivity** feature, two destinations must be configured, as depicted in following picture:
 
-![Mobile connectivity details](src/xcode/readmeImages/ms03_connectivity_details.png)
+![Mobile connectivity details](readmeImages/ms03_connectivity_details.png)
 
 Paths to destinations must be:
 
@@ -203,11 +203,11 @@ xsjsFunctions | https://*\<cv-19-tracing-xsjs module path\>*/xsjs/functions.xsjs
 
 Where `<cv-19-tracing-xsjs module path>` is the path to the **xsjs** module of back-end MTA app:
 
-![CF Spaces CV19-tracing back-end modules](src/xcode/readmeImages/ms04_scp_cockpit_xsjs_srv.png)
+![CF Spaces CV19-tracing back-end modules](readmeImages/ms04_scp_cockpit_xsjs_srv.png)
 
 Once accessed the application in the CF Space cockpit, the url can be found in the **Application routes** section:
 
-![CV19-tracing back-end xsjs module application](src/xcode/readmeImages/ms05_xsjs_srv_url.png)
+![CV19-tracing back-end xsjs module application](readmeImages/ms05_xsjs_srv_url.png)
 
 Tutorials for SAP Cloud Platform mobile services and SDK for iOS
 ==============================
