@@ -1,0 +1,67 @@
+
+/* Class = "UILabel"; text = "Benvenuto, safetyAtWork ti permette di tracciare i colleghi con cui vieni in contatto e avvisarti se sei troppo vicino ad un collega"; ObjectID = "1SK-aE-Ddd"; */
+"1SK-aE-Ddd.text" = "Bienvenido, safetyAtWork te permite hacer un seguimiento de tus compañeros con los que estás en contacto y te notifica si estás demasiado cerca de ellos.";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "33Z-4A-JhH"; */
+"33Z-4A-JhH.normalTitle" = "Ok";
+
+/* Class = "UIButton"; normalTitle = "LOG"; ObjectID = "4ss-7l-Joy"; */
+"4ss-7l-Joy.normalTitle" = "LOG";
+
+/* Class = "UILabel"; text = "Tracciamento"; ObjectID = "64E-He-cSr"; */
+"64E-He-cSr.text" = "Rastreo";
+
+/* Class = "UILabel"; text = "Per utilizzare l'applicazione, il bluetooth deve essere sempre attivo.Ti preghiamo di non spegnere il bluetooth"; ObjectID = "6ll-tn-qkp"; */
+"6ll-tn-qkp.text" = "Para utilizar la aplicación, el bluetooth debe estar activo. No lo desactives por favor.";
+
+
+/* Class = "UIButton"; normalTitle = "Chiama HR"; ObjectID = "GAy-Ei-knD"; */
+"GAy-Ei-knD.normalTitle" = "Llamar a HR";
+
+/* Class = "UIButton"; normalTitle = "Ho capito"; ObjectID = "JnY-91-DeV"; */
+"JnY-91-DeV.normalTitle" = "Lo comprendo";
+
+/* Class = "UILabel"; text = "L'applicazione ha bisogno di accedere al GPS per ricevere informazioni da iBeacon presenti nelle sale riunioni e negli spazi comuni"; ObjectID = "KWP-nG-cRi"; */
+"KWP-nG-cRi.text" = "La aplicación necesita acceder al GPS del dispositivo para recibir información de los beacons de las salas de reuniones y areas comunes.";
+
+/* Class = "UIButton"; normalTitle = "Accendi il bluetooth"; ObjectID = "QJ1-9b-Gdc"; */
+"QJ1-9b-Gdc.normalTitle" = "Activar bluetooth";
+
+/* Class = "UIButton"; normalTitle = "Attiva notifiche"; ObjectID = "Vgg-it-MW1"; */
+"Vgg-it-MW1.normalTitle" = "Permitir notificaciones";
+
+
+/* Class = "UILabel"; text = "GOOD TO KNOW"; ObjectID = "WYt-iA-P2A"; */
+"WYt-iA-P2A.text" = "A TENER EN CUENTA";
+
+/* Class = "UILabel"; text = "The app automatically recognises when two users have been in close proximity for a certain time."; ObjectID = "ZXJ-2Q-7fi"; */
+"ZXJ-2Q-7fi.text" = "La aplicación reconoce automáticamente  cuando dos usuarios han estado cerca durante un periodo de tiempo.";
+
+/* Class = "UILabel"; text = "Al momento non ci sono segnalazioni di contagio"; ObjectID = "aSF-zR-jgh"; */
+"aSF-zR-jgh.text" = "Por el momento no hay informes de contagio.";
+
+/* Class = "UILabel"; text = "Nessuna segnalazione"; ObjectID = "hlx-Me-KaI"; */
+"hlx-Me-KaI.text" = "Sin informe";
+
+/* Class = "UILabel"; text = "Le informazioni scambiate via bluetooth sono salvate in modo anonimo "; ObjectID = "kgw-gk-r9W"; */
+"kgw-gk-r9W.text" = "La información intercambiada por bluetooth es almacenada de forma anónima.";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lme-FQ-DaE"; */
+"lme-FQ-DaE.text" = "Etiqueta";
+
+/* Class = "UILabel"; text = "Consenti il tracciamento"; ObjectID = "lyl-XS-BSK"; */
+"lyl-XS-BSK.text" = "Permitir seguimiento";
+
+/* Class = "UILabel"; text = "L'applicazione può inviarti una notifica se c'è un possibile caso di infezione tra i contatti che hai incontrato negli ultimi 14 giorni"; ObjectID = "ndM-dg-p1e"; */
+"ndM-dg-p1e.text" = "La aplicación te notificará si hay un posible caso de infección entre las personas con las que has mantenido contacto durante los últimos 14 días.";
+
+/* Class = "UILabel"; text = "Segnalazioni"; ObjectID = "nel-vQ-d1b"; */
+"nel-vQ-d1b.text" = "Notificaciones";
+
+/* Class = "UILabel"; text = "The app operates using as little energy as possible. There is only a minor increase in battery usage."; ObjectID = "rkR-fa-rQj"; */
+
+"rkR-fa-rQj.text" = "La aplicación funciona utilizando la mínima batería posible. Notará únicamente un pequeño incremento de su consumo.";
+
+/* Class = "UILabel"; text = "TRACCIAMENTO ATTIVO"; ObjectID = "vRN-3L-SJe"; */
+"vRN-3L-SJe.text" = "SEGUIMIENTO ACTIVO";
+

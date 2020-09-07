@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  safetyatW
+
+  Created by Perego, Massimo on 08/06/2020.
+  Copyright © 2020 SAP. All rights reserved.
+*/
+"Noreport" = "No hay informes";
+"Nocontagion" = "Por el momento, no hay informes de contagio.";
+"contagion" = "Posible infección";
+"symptoms" = "Hay sospecha de una posible infección. ¿Ha experimentado algún síntoma?";
+"tracciamento disattivo" = "Sin seguimiento";
+"tracciamento attivo" = "Seguimiento activo";
+"Attenzione" = "Atencion";
+"Mantieni la distanza" = "Mantén tu distancia";
+"alertInfected" = "Hay sospecha de una posible infección,abre la aplicación";
