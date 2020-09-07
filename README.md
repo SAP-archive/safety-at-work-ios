@@ -1,5 +1,5 @@
 # Safety@work for iOS
-![Safety@Work header](/readmeImages/header.png)
+![Safety@Work header](readmeImages/header.png)
 
 [![Swift Package Manager compatible](https://img.shields.io/badge/SPM-%E2%9C%93-brightgreen.svg?style=flat)](https://github.com/apple/swift-package-manager) 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
