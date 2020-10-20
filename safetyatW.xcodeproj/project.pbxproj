@@ -29,8 +29,117 @@
 		3068DC9F247FC7AD00A11024 /* icons8-security_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 3068DC9E247FC7AD00A11024 /* icons8-security_checked.png */; };
 		3068DCA12480005800A11024 /* SAP_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3068DCA02480005800A11024 /* SAP_logo.png */; };
 		306F6C3024886B4B006C8247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306F6C2F24886B4A006C8247 /* Assets.xcassets */; };
+		306F6C3D24894647006C8247 /* ODataOnboardingStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D5B82247D335E008BFFB2 /* ODataOnboardingStep.swift */; };
+		306F6C3E24894647006C8247 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1315B81D4B982000A5DA56 /* AppDelegate.swift */; };
+		306F6C3F24894647006C8247 /* ODataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30420123247D10E9008A07FA /* ODataLayer.swift */; };
+		306F6C4024894647006C8247 /* HandshakesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA574247BD7F3002BCA80 /* HandshakesStorage.swift */; };
+		306F6C4124894647006C8247 /* V2MetadataChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2F5AF0630E4E9A13462A6E /* V2MetadataChanges.swift */; };
+		306F6C4224894647006C8247 /* KnownCasesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA57F247BD7F3002BCA80 /* KnownCasesStorage.swift */; };
+		306F6C4324894647006C8247 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA582247BD7F3002BCA80 /* Crypto.swift */; };
+		306F6C4424894647006C8247 /* V2StaticResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E570F0D7D1D8B737BB28D6D4 /* V2StaticResolver.swift */; };
+		306F6C4524894647006C8247 /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA576247BD7F3002BCA80 /* SecureStorage.swift */; };
+		306F6C4624894647006C8247 /* V2Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC770C2C0064A3FA121798C2 /* V2Factory.swift */; };
+		306F6C4724894647006C8247 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30420116247D10D3008A07FA /* ViewController.swift */; };
+		306F6C4824894647006C8247 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA59D247BD7F3002BCA80 /* Contact.swift */; };
+		306F6C4924894647006C8247 /* BluetoothDiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA5A2247BD7F3002BCA80 /* BluetoothDiscoveryService.swift */; };
+		306F6C4A24894647006C8247 /* InfectedSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A751B945A064921F9012A2B1 /* InfectedSetType.swift */; };
+		306F6C4B24894647006C8247 /* DefaultAPP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA646247BD802002BCA80 /* DefaultAPP.swift */; };
+		306F6C4C24894647006C8247 /* ServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30420127247D1260008A07FA /* ServiceConfiguration.swift */; };
+		306F6C4D24894647006C8247 /* KnownCaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA599247BD7F3002BCA80 /* KnownCaseModel.swift */; };
+		306F6C4E24894647006C8247 /* KnownCasesSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA589247BD7F3002BCA80 /* KnownCasesSynchronizer.swift */; };
+		306F6C4F24894647006C8247 /* V2Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02730446742502BD6D8CBA7 /* V2Metadata.swift */; };
+		306F6C5024894647006C8247 /* V2MetadataText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BECFB5AF43529EA6EBF677B /* V2MetadataText.swift */; };
+		306F6C5124894647006C8247 /* URL+Backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA58F247BD7F3002BCA80 /* URL+Backup.swift */; };
+		306F6C5224894647006C8247 /* DeviceInfoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA580247BD7F3002BCA80 /* DeviceInfoStorage.swift */; };
+		306F6C5324894647006C8247 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA594247BD7F3002BCA80 /* APIModel.swift */; };
+		306F6C5424894647006C8247 /* V2MetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6484337FC1A778DFB8C0B6E5 /* V2MetadataParser.swift */; };
+		306F6C5524894647006C8247 /* ProtoExposedList.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA59E247BD7F3002BCA80 /* ProtoExposedList.pb.swift */; };
+		306F6C5624894647006C8247 /* BluetoothBroadcastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA5A4247BD7F3002BCA80 /* BluetoothBroadcastService.swift */; };
+		306F6C5724894647006C8247 /* EventSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC1B53142E3F8127F7C779 /* EventSetType.swift */; };
+		306F6C5824894647006C8247 /* DeviceSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E9D5C39478FB0A3DB05D10 /* DeviceSetType.swift */; };
+		306F6C5924894647006C8247 /* ExposureDaysStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA578247BD7F3002BCA80 /* ExposureDaysStorage.swift */; };
+		306F6C5A24894647006C8247 /* Pulsator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3068DC95247F250200A11024 /* Pulsator.swift */; };
+		306F6C5B24894647006C8247 /* ExposeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA595247BD7F3002BCA80 /* ExposeeModel.swift */; };
+		306F6C5C24894647006C8247 /* ExposeeServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA586247BD7F3002BCA80 /* ExposeeServiceClient.swift */; };
+		306F6C5D24894647006C8247 /* ExposureDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA596247BD7F3002BCA80 /* ExposureDay.swift */; };
+		306F6C5E24894647006C8247 /* EphemeralIDSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F2E8DA3294EF411097E21F /* EphemeralIDSetType.swift */; };
+		306F6C5F24894647006C8247 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA57A247BD7F3002BCA80 /* Keychain.swift */; };
+		306F6C6024894647006C8247 /* V2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A70A85CDF210C597CF43F83 /* V2.swift */; };
+		306F6C6124894647006C8247 /* Date+milliseconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA58E247BD7F3002BCA80 /* Date+milliseconds.swift */; };
+		306F6C6224894647006C8247 /* BluetoohOnboardingViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30420117247D10D3008A07FA /* BluetoohOnboardingViewcontroller.swift */; };
+		306F6C6324894647006C8247 /* LoggingStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA575247BD7F3002BCA80 /* LoggingStorage.swift */; };
+		306F6C6424894647006C8247 /* ApplicationStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA579247BD7F3002BCA80 /* ApplicationStorage.swift */; };
+		306F6C6524894647006C8247 /* DP3TSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA5A0247BD7F3002BCA80 /* DP3TSDK.swift */; };
+		306F6C6624894647006C8247 /* ODataControlling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042012B247D12E7008A07FA /* ODataControlling.swift */; };
+		306F6C6724894647006C8247 /* OnboardingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D5B7E247D331C008BFFB2 /* OnboardingErrorHandler.swift */; };
+		306F6C6824894647006C8247 /* BeaconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042011B247D10D5008A07FA /* BeaconController.swift */; };
+		306F6C6924894647006C8247 /* EphemeralIDInfectedSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CD0218E9036C78B2E93BA4 /* EphemeralIDInfectedSetType.swift */; };
+		306F6C6A24894647006C8247 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30420122247D10E8008A07FA /* Networking.swift */; };
+		306F6C6B24894647006C8247 /* DP3TMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA5A6247BD7F3002BCA80 /* DP3TMatching.swift */; };
+		306F6C6C24894647006C8247 /* ContactsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA57E247BD7F3002BCA80 /* ContactsStorage.swift */; };
+		306F6C6D24894647006C8247 /* ProximityDetectedSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0908B8F0E773F78D5C52233 /* ProximityDetectedSetType.swift */; };
+		306F6C6E24894647006C8247 /* DP3TMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA5A7247BD7F3002BCA80 /* DP3TMode.swift */; };
+		306F6C6F24894647006C8247 /* DP3TParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA5A9247BD7F3002BCA80 /* DP3TParameters.swift */; };
+		306F6C7024894647006C8247 /* DP3TBackgroundTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA5A5247BD7F3002BCA80 /* DP3TBackgroundTaskManager.swift */; };
+		306F6C7124894647006C8247 /* SecretKeysStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA577247BD7F3002BCA80 /* SecretKeysStorage.swift */; };
+		306F6C7224894647006C8247 /* DP3TTracing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA58A247BD7F3002BCA80 /* DP3TTracing.swift */; };
+		306F6C7324894647006C8247 /* pushOnboardingcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042011A247D10D4008A07FA /* pushOnboardingcontroller.swift */; };
+		306F6C7424894647006C8247 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313B2C3CB36BC34406E618A4 /* LocalizedStrings.swift */; };
+		306F6C7524894647006C8247 /* ContactFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA590247BD7F3002BCA80 /* ContactFactory.swift */; };
+		306F6C7624894647006C8247 /* SafetyatworkdestinationOnlineODataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042012D247D12FA008A07FA /* SafetyatworkdestinationOnlineODataController.swift */; };
+		306F6C7724894647006C8247 /* DP3TError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA58B247BD7F3002BCA80 /* DP3TError.swift */; };
+		306F6C7824894647006C8247 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30420113247C171A008A07FA /* LogsViewController.swift */; };
+		306F6C7924894647006C8247 /* AppParameters.plist in Sources */ = {isa = PBXBuildFile; fileRef = 1205B0A7349867333928EDEA /* AppParameters.plist */; };
+		306F6C7A24894647006C8247 /* LoggingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA5A8247BD7F3002BCA80 /* LoggingDelegate.swift */; };
+		306F6C7B24894647006C8247 /* JWTVerification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA591247BD7F3002BCA80 /* JWTVerification.swift */; };
+		306F6C7C24894647006C8247 /* ConfigurationProvider.plist in Sources */ = {isa = PBXBuildFile; fileRef = 6B6161679E3446C1A4976ED2 /* ConfigurationProvider.plist */; };
+		306F6C7D24894647006C8247 /* DP3TCryptoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA583247BD7F3002BCA80 /* DP3TCryptoModule.swift */; };
+		306F6C7E24894647006C8247 /* TimeInterval+const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA58D247BD7F3002BCA80 /* TimeInterval+const.swift */; };
+		306F6C7F24894647006C8247 /* ApplicationUIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D9C98556BD00A38E7F482 /* ApplicationUIManager.swift */; };
+		306F6C8024894647006C8247 /* ApplicationsSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA587247BD7F3002BCA80 /* ApplicationsSynchronizer.swift */; };
+		306F6C8124894647006C8247 /* ProtoExposedList.proto in Sources */ = {isa = PBXBuildFile; fileRef = 309EA597247BD7F3002BCA80 /* ProtoExposedList.proto */; };
+		306F6C8224894647006C8247 /* SQLite+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA57C247BD7F3002BCA80 /* SQLite+URL.swift */; };
+		306F6C8324894647006C8247 /* DP3TTracingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA59F247BD7F3002BCA80 /* DP3TTracingState.swift */; };
+		306F6C8424894647006C8247 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA57D247BD7F3002BCA80 /* Defaults.swift */; };
+		306F6C8524894647006C8247 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D5B7C247D26A6008BFFB2 /* SceneDelegate.swift */; };
+		306F6C8624894647006C8247 /* mainViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30420118247D10D4008A07FA /* mainViewcontroller.swift */; };
+		306F6C8724894647006C8247 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA57B247BD7F3002BCA80 /* Database.swift */; };
+		306F6C8824894647006C8247 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA585247BD7F3002BCA80 /* Endpoints.swift */; };
+		306F6C8924894647006C8247 /* BluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA5A3247BD7F3002BCA80 /* BluetoothDelegate.swift */; };
+		306F6C8A24894647006C8247 /* ApplicationDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA59C247BD7F3002BCA80 /* ApplicationDescriptor.swift */; };
+		306F6C8B24894647006C8247 /* firstViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30420111247C157A008A07FA /* firstViewcontroller.swift */; };
+		306F6C8C24894647006C8247 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA59A247BD7F3002BCA80 /* SecretKey.swift */; };
+		306F6C8D24894647006C8247 /* DayDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA59B247BD7F3002BCA80 /* DayDate.swift */; };
+		306F6C8E24894647006C8247 /* HandshakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA598247BD7F3002BCA80 /* HandshakeModel.swift */; };
+		306F6C8F24894647006C8247 /* ExposeeAuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA593247BD7F3002BCA80 /* ExposeeAuthMethod.swift */; };
+		306F6C9024894647006C8247 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EA588247BD7F3002BCA80 /* Enviroment.swift */; };
+		306F6C9124894647006C8247 /* OnboardingFlowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D5B7F247D331C008BFFB2 /* OnboardingFlowProvider.swift */; };
+		306F6C9324894647006C8247 /* SAPFiori.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9193797F232F7A38001F9DAC /* SAPFiori.xcframework */; };
+		306F6C9424894647006C8247 /* SAPFioriFlows.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9193797E232F7A38001F9DAC /* SAPFioriFlows.xcframework */; };
+		306F6C9524894647006C8247 /* SAPOData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91937981232F7A38001F9DAC /* SAPOData.xcframework */; };
+		306F6C9624894647006C8247 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 306F6C3624894647006C8247 /* SwiftProtobuf */; };
+		306F6C9724894647006C8247 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 306F6C3224894647006C8247 /* Alamofire */; };
+		306F6C9824894647006C8247 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 306F6C3424894647006C8247 /* SQLite */; };
+		306F6C9924894647006C8247 /* SAPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91937980232F7A38001F9DAC /* SAPFoundation.xcframework */; };
+		306F6C9A24894647006C8247 /* SAPCommon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9193797D232F7A38001F9DAC /* SAPCommon.xcframework */; };
+		306F6C9B24894647006C8247 /* SwiftJWT in Frameworks */ = {isa = PBXBuildFile; productRef = 306F6C3824894647006C8247 /* SwiftJWT */; };
+		306F6C9E24894647006C8247 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A16F06C1FD1B3C700D2FABD /* README.md */; };
+		306F6C9F24894647006C8247 /* icons8-warning_shield.png in Resources */ = {isa = PBXBuildFile; fileRef = 3068DC9A247FC44500A11024 /* icons8-warning_shield.png */; };
+		306F6CA024894647006C8247 /* icons8-security_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 3068DC9E247FC7AD00A11024 /* icons8-security_checked.png */; };
+		306F6CA124894647006C8247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3042021B247D14ED008A07FA /* LaunchScreen.storyboard */; };
+		306F6CA224894647006C8247 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 309EA5AA247BD7F3002BCA80 /* Config.xcconfig */; };
+		306F6CA324894647006C8247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306F6C2F24886B4A006C8247 /* Assets.xcassets */; };
+		306F6CA424894647006C8247 /* SAP_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3068DCA02480005800A11024 /* SAP_logo.png */; };
+		306F6CA624894647006C8247 /* SAPFiori.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9193797F232F7A38001F9DAC /* SAPFiori.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		306F6CA724894647006C8247 /* SAPFioriFlows.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9193797E232F7A38001F9DAC /* SAPFioriFlows.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		306F6CA824894647006C8247 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		306F6CA924894647006C8247 /* SAPOData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91937981232F7A38001F9DAC /* SAPOData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		306F6CAA24894647006C8247 /* SAPFoundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91937980232F7A38001F9DAC /* SAPFoundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		306F6CAB24894647006C8247 /* SAPCommon.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9193797D232F7A38001F9DAC /* SAPCommon.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		306F6CB5248E9E08006C8247 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 306F6CB8248E9E08006C8247 /* Localizable.strings */; };
+		306F6CB6248E9E08006C8247 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 306F6CB8248E9E08006C8247 /* Localizable.strings */; };
 		306F6CBA248E9ED1006C8247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306F6CBD248E9ED1006C8247 /* Main.storyboard */; };
+		306F6CBB248E9ED1006C8247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306F6CBD248E9ED1006C8247 /* Main.storyboard */; };
 		309D5B7D247D26A7008BFFB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D5B7C247D26A6008BFFB2 /* SceneDelegate.swift */; };
 		309D5B80247D331C008BFFB2 /* OnboardingErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D5B7E247D331C008BFFB2 /* OnboardingErrorHandler.swift */; };
 		309D5B81247D331C008BFFB2 /* OnboardingFlowProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D5B7F247D331C008BFFB2 /* OnboardingFlowProvider.swift */; };
@@ -90,13 +199,20 @@
 		309EA64D247BD8FF002BCA80 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 309EA64C247BD8FF002BCA80 /* SQLite */; };
 		309EA650247BD91A002BCA80 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 309EA64F247BD91A002BCA80 /* SwiftProtobuf */; };
 		309EA653247BD93F002BCA80 /* SwiftJWT in Frameworks */ = {isa = PBXBuildFile; productRef = 309EA652247BD93F002BCA80 /* SwiftJWT */; };
-		30B0FFDF250620950088B3EA /* RealTimeRoomStatusParametersType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFD8250620950088B3EA /* RealTimeRoomStatusParametersType.swift */; };
-		30B0FFE0250620950088B3EA /* DeviceTagSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFD9250620950088B3EA /* DeviceTagSetType.swift */; };
-		30B0FFE1250620950088B3EA /* HistoryDevicesStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFDA250620950088B3EA /* HistoryDevicesStatusType.swift */; };
-		30B0FFE2250620950088B3EA /* TagSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFDB250620950088B3EA /* TagSetType.swift */; };
-		30B0FFE3250620950088B3EA /* DeviceUserViewSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFDC250620950088B3EA /* DeviceUserViewSetType.swift */; };
-		30B0FFE4250620950088B3EA /* RealTimeRoomStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFDD250620950088B3EA /* RealTimeRoomStatusType.swift */; };
-		30B0FFE5250620950088B3EA /* HistoryDevicesStatusParametersType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFDE250620950088B3EA /* HistoryDevicesStatusParametersType.swift */; };
+		30B0FFCA2502AADB0088B3EA /* TagSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC32502AADB0088B3EA /* TagSetType.swift */; };
+		30B0FFCB2502AADB0088B3EA /* TagSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC32502AADB0088B3EA /* TagSetType.swift */; };
+		30B0FFCC2502AADB0088B3EA /* HistoryDevicesStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC42502AADB0088B3EA /* HistoryDevicesStatusType.swift */; };
+		30B0FFCD2502AADB0088B3EA /* HistoryDevicesStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC42502AADB0088B3EA /* HistoryDevicesStatusType.swift */; };
+		30B0FFCE2502AADB0088B3EA /* DeviceUserViewSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC52502AADB0088B3EA /* DeviceUserViewSetType.swift */; };
+		30B0FFCF2502AADB0088B3EA /* DeviceUserViewSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC52502AADB0088B3EA /* DeviceUserViewSetType.swift */; };
+		30B0FFD02502AADB0088B3EA /* HistoryDevicesStatusParametersType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC62502AADB0088B3EA /* HistoryDevicesStatusParametersType.swift */; };
+		30B0FFD12502AADB0088B3EA /* HistoryDevicesStatusParametersType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC62502AADB0088B3EA /* HistoryDevicesStatusParametersType.swift */; };
+		30B0FFD22502AADB0088B3EA /* DeviceTagSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC72502AADB0088B3EA /* DeviceTagSetType.swift */; };
+		30B0FFD32502AADB0088B3EA /* DeviceTagSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC72502AADB0088B3EA /* DeviceTagSetType.swift */; };
+		30B0FFD42502AADB0088B3EA /* RealTimeRoomStatusParametersType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC82502AADB0088B3EA /* RealTimeRoomStatusParametersType.swift */; };
+		30B0FFD52502AADB0088B3EA /* RealTimeRoomStatusParametersType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC82502AADB0088B3EA /* RealTimeRoomStatusParametersType.swift */; };
+		30B0FFD62502AADB0088B3EA /* RealTimeRoomStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC92502AADB0088B3EA /* RealTimeRoomStatusType.swift */; };
+		30B0FFD72502AADB0088B3EA /* RealTimeRoomStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B0FFC92502AADB0088B3EA /* RealTimeRoomStatusType.swift */; };
 		3CC39C3EBA851A2D01A3C393 /* V2MetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6484337FC1A778DFB8C0B6E5 /* V2MetadataParser.swift */; };
 		460365DA7333660DAE162C8E /* EphemeralIDInfectedSetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CD0218E9036C78B2E93BA4 /* EphemeralIDInfectedSetType.swift */; };
 		5F85ACD3E725F3CA80A0CA2C /* V2Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02730446742502BD6D8CBA7 /* V2Metadata.swift */; };
@@ -136,6 +252,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		306F6CA524894647006C8247 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				306F6CA624894647006C8247 /* SAPFiori.xcframework in Embed Frameworks */,
+				306F6CA724894647006C8247 /* SAPFioriFlows.xcframework in Embed Frameworks */,
+				306F6CA824894647006C8247 /* (null) in Embed Frameworks */,
+				306F6CA924894647006C8247 /* SAPOData.xcframework in Embed Frameworks */,
+				306F6CAA24894647006C8247 /* SAPFoundation.xcframework in Embed Frameworks */,
+				306F6CAB24894647006C8247 /* SAPCommon.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		758AC1C31D5A265200311F39 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +291,8 @@
 		1A70A85CDF210C597CF43F83 /* V2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = V2.swift; path = "Proxy Classes/public/V2.swift"; sourceTree = "<group>"; };
 		1BECFB5AF43529EA6EBF677B /* V2MetadataText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = V2MetadataText.swift; path = "Proxy Classes/internal/V2MetadataText.swift"; sourceTree = "<group>"; };
 		1C2F5AF0630E4E9A13462A6E /* V2MetadataChanges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = V2MetadataChanges.swift; path = "Proxy Classes/internal/V2MetadataChanges.swift"; sourceTree = "<group>"; };
+		302B97D924A5F804009380E4 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		302B97DA24A5F804009380E4 /* es */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		30420111247C157A008A07FA /* firstViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstViewcontroller.swift; sourceTree = "<group>"; };
 		30420113247C171A008A07FA /* LogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
 		30420116247D10D3008A07FA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +312,7 @@
 		3068DC9E247FC7AD00A11024 /* icons8-security_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-security_checked.png"; sourceTree = "<group>"; };
 		3068DCA02480005800A11024 /* SAP_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SAP_logo.png; sourceTree = "<group>"; };
 		306F6C2F24886B4A006C8247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		306F6CAF24894647006C8247 /* Safety@WorkTEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safety@WorkTEST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		306F6CB024894648006C8247 /* safetyatW copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "safetyatW copy-Info.plist"; path = "/Users/i509534/Documents/GitHub/SafetyV2/safetyatW copy-Info.plist"; sourceTree = "<absolute>"; };
 		306F6CB7248E9E08006C8247 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		306F6CB9248E9E0E006C8247 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -239,13 +374,13 @@
 		309EA5A9247BD7F3002BCA80 /* DP3TParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DP3TParameters.swift; sourceTree = "<group>"; };
 		309EA5AA247BD7F3002BCA80 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		309EA646247BD802002BCA80 /* DefaultAPP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultAPP.swift; sourceTree = "<group>"; };
-		30B0FFD8250620950088B3EA /* RealTimeRoomStatusParametersType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealTimeRoomStatusParametersType.swift; path = "Proxy Classes/public/RealTimeRoomStatusParametersType.swift"; sourceTree = "<group>"; };
-		30B0FFD9250620950088B3EA /* DeviceTagSetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceTagSetType.swift; path = "Proxy Classes/public/DeviceTagSetType.swift"; sourceTree = "<group>"; };
-		30B0FFDA250620950088B3EA /* HistoryDevicesStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDevicesStatusType.swift; path = "Proxy Classes/public/HistoryDevicesStatusType.swift"; sourceTree = "<group>"; };
-		30B0FFDB250620950088B3EA /* TagSetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagSetType.swift; path = "Proxy Classes/public/TagSetType.swift"; sourceTree = "<group>"; };
-		30B0FFDC250620950088B3EA /* DeviceUserViewSetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceUserViewSetType.swift; path = "Proxy Classes/public/DeviceUserViewSetType.swift"; sourceTree = "<group>"; };
-		30B0FFDD250620950088B3EA /* RealTimeRoomStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealTimeRoomStatusType.swift; path = "Proxy Classes/public/RealTimeRoomStatusType.swift"; sourceTree = "<group>"; };
-		30B0FFDE250620950088B3EA /* HistoryDevicesStatusParametersType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDevicesStatusParametersType.swift; path = "Proxy Classes/public/HistoryDevicesStatusParametersType.swift"; sourceTree = "<group>"; };
+		30B0FFC32502AADB0088B3EA /* TagSetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TagSetType.swift; path = "Proxy Classes/public/TagSetType.swift"; sourceTree = "<group>"; };
+		30B0FFC42502AADB0088B3EA /* HistoryDevicesStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDevicesStatusType.swift; path = "Proxy Classes/public/HistoryDevicesStatusType.swift"; sourceTree = "<group>"; };
+		30B0FFC52502AADB0088B3EA /* DeviceUserViewSetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceUserViewSetType.swift; path = "Proxy Classes/public/DeviceUserViewSetType.swift"; sourceTree = "<group>"; };
+		30B0FFC62502AADB0088B3EA /* HistoryDevicesStatusParametersType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDevicesStatusParametersType.swift; path = "Proxy Classes/public/HistoryDevicesStatusParametersType.swift"; sourceTree = "<group>"; };
+		30B0FFC72502AADB0088B3EA /* DeviceTagSetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceTagSetType.swift; path = "Proxy Classes/public/DeviceTagSetType.swift"; sourceTree = "<group>"; };
+		30B0FFC82502AADB0088B3EA /* RealTimeRoomStatusParametersType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealTimeRoomStatusParametersType.swift; path = "Proxy Classes/public/RealTimeRoomStatusParametersType.swift"; sourceTree = "<group>"; };
+		30B0FFC92502AADB0088B3EA /* RealTimeRoomStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealTimeRoomStatusType.swift; path = "Proxy Classes/public/RealTimeRoomStatusType.swift"; sourceTree = "<group>"; };
 		313B2C3CB36BC34406E618A4 /* LocalizedStrings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		35E9D5C39478FB0A3DB05D10 /* DeviceSetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceSetType.swift; path = "Proxy Classes/public/DeviceSetType.swift"; sourceTree = "<group>"; };
 		5B0D9C98556BD00A38E7F482 /* ApplicationUIManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApplicationUIManager.swift; path = Onboarding/ApplicationUIManager.swift; sourceTree = "<group>"; };
@@ -274,6 +409,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		306F6C9224894647006C8247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306F6C9324894647006C8247 /* SAPFiori.xcframework in Frameworks */,
+				306F6C9424894647006C8247 /* SAPFioriFlows.xcframework in Frameworks */,
+				306F6C9524894647006C8247 /* SAPOData.xcframework in Frameworks */,
+				306F6C9624894647006C8247 /* SwiftProtobuf in Frameworks */,
+				306F6C9724894647006C8247 /* Alamofire in Frameworks */,
+				306F6C9824894647006C8247 /* SQLite in Frameworks */,
+				306F6C9924894647006C8247 /* SAPFoundation.xcframework in Frameworks */,
+				306F6C9A24894647006C8247 /* SAPCommon.xcframework in Frameworks */,
+				306F6C9B24894647006C8247 /* SwiftJWT in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A1315B21D4B982000A5DA56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +461,15 @@
 				6484337FC1A778DFB8C0B6E5 /* V2MetadataParser.swift */,
 			);
 			name = internal;
+			sourceTree = "<group>";
+		};
+		3033270224ACBEA100F88323 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3068DC9E247FC7AD00A11024 /* icons8-security_checked.png */,
+				3068DC9A247FC44500A11024 /* icons8-warning_shield.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		30420115247D10C1008A07FA /* Viewcontroller */ = {
@@ -452,13 +612,13 @@
 		6A71701FDAAF833779D6468D /* public */ = {
 			isa = PBXGroup;
 			children = (
-				30B0FFD9250620950088B3EA /* DeviceTagSetType.swift */,
-				30B0FFDC250620950088B3EA /* DeviceUserViewSetType.swift */,
-				30B0FFDE250620950088B3EA /* HistoryDevicesStatusParametersType.swift */,
-				30B0FFDA250620950088B3EA /* HistoryDevicesStatusType.swift */,
-				30B0FFD8250620950088B3EA /* RealTimeRoomStatusParametersType.swift */,
-				30B0FFDD250620950088B3EA /* RealTimeRoomStatusType.swift */,
-				30B0FFDB250620950088B3EA /* TagSetType.swift */,
+				30B0FFC72502AADB0088B3EA /* DeviceTagSetType.swift */,
+				30B0FFC52502AADB0088B3EA /* DeviceUserViewSetType.swift */,
+				30B0FFC62502AADB0088B3EA /* HistoryDevicesStatusParametersType.swift */,
+				30B0FFC42502AADB0088B3EA /* HistoryDevicesStatusType.swift */,
+				30B0FFC82502AADB0088B3EA /* RealTimeRoomStatusParametersType.swift */,
+				30B0FFC92502AADB0088B3EA /* RealTimeRoomStatusType.swift */,
+				30B0FFC32502AADB0088B3EA /* TagSetType.swift */,
 				A751B945A064921F9012A2B1 /* InfectedSetType.swift */,
 				F02730446742502BD6D8CBA7 /* V2Metadata.swift */,
 				A9FC1B53142E3F8127F7C779 /* EventSetType.swift */,
@@ -488,6 +648,7 @@
 			children = (
 				7A1315B51D4B982000A5DA56 /* Safety@Work.app */,
 				7A5744B321DE553600E58C7F /* UITests.xctest */,
+				306F6CAF24894647006C8247 /* Safety@WorkTEST.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -509,8 +670,7 @@
 				313B2C3CB36BC34406E618A4 /* LocalizedStrings.swift */,
 				5B0D9C98556BD00A38E7F482 /* ApplicationUIManager.swift */,
 				3042012D247D12FA008A07FA /* SafetyatworkdestinationOnlineODataController.swift */,
-				3068DC9E247FC7AD00A11024 /* icons8-security_checked.png */,
-				3068DC9A247FC44500A11024 /* icons8-warning_shield.png */,
+				3033270224ACBEA100F88323 /* Images */,
 				A92E2C33FC56EE1533DB5CCD /* Onboarding */,
 				30420126247D10EE008A07FA /* Networking */,
 				309D5B7C247D26A6008BFFB2 /* SceneDelegate.swift */,
@@ -566,9 +726,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7A1315B41D4B982000A5DA56 /* demosafetyatW */ = {
+		306F6C3124894647006C8247 /* safetyatWTEST */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "demosafetyatW" */;
+			buildConfigurationList = 306F6CAC24894647006C8247 /* Build configuration list for PBXNativeTarget "safetyatWTEST" */;
+			buildPhases = (
+				306F6C3A24894647006C8247 /* Refresh SAP Cloud Platform SDK for iOS Frameworks */,
+				306F6C3B24894647006C8247 /* Codesign Binaries */,
+				306F6C3C24894647006C8247 /* Sources */,
+				306F6C9224894647006C8247 /* Frameworks */,
+				306F6C9C24894647006C8247 /* Resources */,
+				306F6CA524894647006C8247 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = safetyatWTEST;
+			packageProductDependencies = (
+				306F6C3224894647006C8247 /* Alamofire */,
+				306F6C3424894647006C8247 /* SQLite */,
+				306F6C3624894647006C8247 /* SwiftProtobuf */,
+				306F6C3824894647006C8247 /* SwiftJWT */,
+			);
+			productName = safetyatW;
+			productReference = 306F6CAF24894647006C8247 /* Safety@WorkTEST.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A1315B41D4B982000A5DA56 /* safetyatW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "safetyatW" */;
 			buildPhases = (
 				237616AD21AECC9A00B6F8AD /* Refresh SAP Cloud Platform SDK for iOS Frameworks */,
 				AE0C88F42403A2B5002A9565 /* Codesign Binaries */,
@@ -581,7 +767,7 @@
 			);
 			dependencies = (
 			);
-			name = demosafetyatW;
+			name = safetyatW;
 			packageProductDependencies = (
 				309EA649247BD8E9002BCA80 /* Alamofire */,
 				309EA64C247BD8FF002BCA80 /* SQLite */,
@@ -640,6 +826,7 @@
 				en,
 				Base,
 				it,
+				es,
 			);
 			mainGroup = 7A1315AC1D4B982000A5DA56;
 			packageReferences = (
@@ -652,13 +839,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7A1315B41D4B982000A5DA56 /* demosafetyatW */,
+				7A1315B41D4B982000A5DA56 /* safetyatW */,
 				7A5744B221DE553600E58C7F /* UITests */,
+				306F6C3124894647006C8247 /* safetyatWTEST */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		306F6C9C24894647006C8247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306F6CBB248E9ED1006C8247 /* Main.storyboard in Resources */,
+				306F6C9E24894647006C8247 /* README.md in Resources */,
+				306F6C9F24894647006C8247 /* icons8-warning_shield.png in Resources */,
+				306F6CA024894647006C8247 /* icons8-security_checked.png in Resources */,
+				306F6CB6248E9E08006C8247 /* Localizable.strings in Resources */,
+				306F6CA124894647006C8247 /* LaunchScreen.storyboard in Resources */,
+				306F6CA224894647006C8247 /* Config.xcconfig in Resources */,
+				306F6CA324894647006C8247 /* Assets.xcassets in Resources */,
+				306F6CA424894647006C8247 /* SAP_logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A1315B31D4B982000A5DA56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -703,6 +907,43 @@
 			shellScript = "sh ./scripts/refreshframeworks.sh\n";
 			showEnvVarsInLog = 0;
 		};
+		306F6C3A24894647006C8247 /* Refresh SAP Cloud Platform SDK for iOS Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Refresh SAP Cloud Platform SDK for iOS Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "sh ./scripts/refreshframeworks.sh\n";
+			showEnvVarsInLog = 0;
+		};
+		306F6C3B24894647006C8247 /* Codesign Binaries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Codesign Binaries";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python ./scripts/codesign.py\n";
+		};
 		AE0C88F42403A2B5002A9565 /* Codesign Binaries */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -724,6 +965,105 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		306F6C3C24894647006C8247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306F6C3D24894647006C8247 /* ODataOnboardingStep.swift in Sources */,
+				306F6C3E24894647006C8247 /* AppDelegate.swift in Sources */,
+				306F6C3F24894647006C8247 /* ODataLayer.swift in Sources */,
+				306F6C4024894647006C8247 /* HandshakesStorage.swift in Sources */,
+				306F6C4124894647006C8247 /* V2MetadataChanges.swift in Sources */,
+				306F6C4224894647006C8247 /* KnownCasesStorage.swift in Sources */,
+				306F6C4324894647006C8247 /* Crypto.swift in Sources */,
+				306F6C4424894647006C8247 /* V2StaticResolver.swift in Sources */,
+				306F6C4524894647006C8247 /* SecureStorage.swift in Sources */,
+				30B0FFD12502AADB0088B3EA /* HistoryDevicesStatusParametersType.swift in Sources */,
+				306F6C4624894647006C8247 /* V2Factory.swift in Sources */,
+				306F6C4724894647006C8247 /* ViewController.swift in Sources */,
+				306F6C4824894647006C8247 /* Contact.swift in Sources */,
+				30B0FFD72502AADB0088B3EA /* RealTimeRoomStatusType.swift in Sources */,
+				306F6C4924894647006C8247 /* BluetoothDiscoveryService.swift in Sources */,
+				306F6C4A24894647006C8247 /* InfectedSetType.swift in Sources */,
+				306F6C4B24894647006C8247 /* DefaultAPP.swift in Sources */,
+				306F6C4C24894647006C8247 /* ServiceConfiguration.swift in Sources */,
+				306F6C4D24894647006C8247 /* KnownCaseModel.swift in Sources */,
+				306F6C4E24894647006C8247 /* KnownCasesSynchronizer.swift in Sources */,
+				306F6C4F24894647006C8247 /* V2Metadata.swift in Sources */,
+				306F6C5024894647006C8247 /* V2MetadataText.swift in Sources */,
+				306F6C5124894647006C8247 /* URL+Backup.swift in Sources */,
+				306F6C5224894647006C8247 /* DeviceInfoStorage.swift in Sources */,
+				306F6C5324894647006C8247 /* APIModel.swift in Sources */,
+				306F6C5424894647006C8247 /* V2MetadataParser.swift in Sources */,
+				306F6C5524894647006C8247 /* ProtoExposedList.pb.swift in Sources */,
+				30B0FFCD2502AADB0088B3EA /* HistoryDevicesStatusType.swift in Sources */,
+				306F6C5624894647006C8247 /* BluetoothBroadcastService.swift in Sources */,
+				306F6C5724894647006C8247 /* EventSetType.swift in Sources */,
+				306F6C5824894647006C8247 /* DeviceSetType.swift in Sources */,
+				306F6C5924894647006C8247 /* ExposureDaysStorage.swift in Sources */,
+				30B0FFCF2502AADB0088B3EA /* DeviceUserViewSetType.swift in Sources */,
+				306F6C5A24894647006C8247 /* Pulsator.swift in Sources */,
+				306F6C5B24894647006C8247 /* ExposeeModel.swift in Sources */,
+				306F6C5C24894647006C8247 /* ExposeeServiceClient.swift in Sources */,
+				306F6C5D24894647006C8247 /* ExposureDay.swift in Sources */,
+				306F6C5E24894647006C8247 /* EphemeralIDSetType.swift in Sources */,
+				306F6C5F24894647006C8247 /* Keychain.swift in Sources */,
+				306F6C6024894647006C8247 /* V2.swift in Sources */,
+				306F6C6124894647006C8247 /* Date+milliseconds.swift in Sources */,
+				306F6C6224894647006C8247 /* BluetoohOnboardingViewcontroller.swift in Sources */,
+				306F6C6324894647006C8247 /* LoggingStorage.swift in Sources */,
+				306F6C6424894647006C8247 /* ApplicationStorage.swift in Sources */,
+				306F6C6524894647006C8247 /* DP3TSDK.swift in Sources */,
+				30B0FFCB2502AADB0088B3EA /* TagSetType.swift in Sources */,
+				306F6C6624894647006C8247 /* ODataControlling.swift in Sources */,
+				306F6C6724894647006C8247 /* OnboardingErrorHandler.swift in Sources */,
+				306F6C6824894647006C8247 /* BeaconController.swift in Sources */,
+				306F6C6924894647006C8247 /* EphemeralIDInfectedSetType.swift in Sources */,
+				306F6C6A24894647006C8247 /* Networking.swift in Sources */,
+				306F6C6B24894647006C8247 /* DP3TMatching.swift in Sources */,
+				306F6C6C24894647006C8247 /* ContactsStorage.swift in Sources */,
+				306F6C6D24894647006C8247 /* ProximityDetectedSetType.swift in Sources */,
+				306F6C6E24894647006C8247 /* DP3TMode.swift in Sources */,
+				306F6C6F24894647006C8247 /* DP3TParameters.swift in Sources */,
+				306F6C7024894647006C8247 /* DP3TBackgroundTaskManager.swift in Sources */,
+				306F6C7124894647006C8247 /* SecretKeysStorage.swift in Sources */,
+				306F6C7224894647006C8247 /* DP3TTracing.swift in Sources */,
+				306F6C7324894647006C8247 /* pushOnboardingcontroller.swift in Sources */,
+				306F6C7424894647006C8247 /* LocalizedStrings.swift in Sources */,
+				306F6C7524894647006C8247 /* ContactFactory.swift in Sources */,
+				306F6C7624894647006C8247 /* SafetyatworkdestinationOnlineODataController.swift in Sources */,
+				306F6C7724894647006C8247 /* DP3TError.swift in Sources */,
+				306F6C7824894647006C8247 /* LogsViewController.swift in Sources */,
+				306F6C7924894647006C8247 /* AppParameters.plist in Sources */,
+				306F6C7A24894647006C8247 /* LoggingDelegate.swift in Sources */,
+				306F6C7B24894647006C8247 /* JWTVerification.swift in Sources */,
+				306F6C7C24894647006C8247 /* ConfigurationProvider.plist in Sources */,
+				306F6C7D24894647006C8247 /* DP3TCryptoModule.swift in Sources */,
+				306F6C7E24894647006C8247 /* TimeInterval+const.swift in Sources */,
+				306F6C7F24894647006C8247 /* ApplicationUIManager.swift in Sources */,
+				306F6C8024894647006C8247 /* ApplicationsSynchronizer.swift in Sources */,
+				306F6C8124894647006C8247 /* ProtoExposedList.proto in Sources */,
+				306F6C8224894647006C8247 /* SQLite+URL.swift in Sources */,
+				306F6C8324894647006C8247 /* DP3TTracingState.swift in Sources */,
+				306F6C8424894647006C8247 /* Defaults.swift in Sources */,
+				306F6C8524894647006C8247 /* SceneDelegate.swift in Sources */,
+				306F6C8624894647006C8247 /* mainViewcontroller.swift in Sources */,
+				306F6C8724894647006C8247 /* Database.swift in Sources */,
+				30B0FFD32502AADB0088B3EA /* DeviceTagSetType.swift in Sources */,
+				306F6C8824894647006C8247 /* Endpoints.swift in Sources */,
+				306F6C8924894647006C8247 /* BluetoothDelegate.swift in Sources */,
+				306F6C8A24894647006C8247 /* ApplicationDescriptor.swift in Sources */,
+				306F6C8B24894647006C8247 /* firstViewcontroller.swift in Sources */,
+				306F6C8C24894647006C8247 /* SecretKey.swift in Sources */,
+				306F6C8D24894647006C8247 /* DayDate.swift in Sources */,
+				306F6C8E24894647006C8247 /* HandshakeModel.swift in Sources */,
+				306F6C8F24894647006C8247 /* ExposeeAuthMethod.swift in Sources */,
+				30B0FFD52502AADB0088B3EA /* RealTimeRoomStatusParametersType.swift in Sources */,
+				306F6C9024894647006C8247 /* Enviroment.swift in Sources */,
+				306F6C9124894647006C8247 /* OnboardingFlowProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A1315B11D4B982000A5DA56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -732,21 +1072,17 @@
 				7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */,
 				30420125247D10E9008A07FA /* ODataLayer.swift in Sources */,
 				309EA5E3247BD7F3002BCA80 /* HandshakesStorage.swift in Sources */,
-				30B0FFE1250620950088B3EA /* HistoryDevicesStatusType.swift in Sources */,
 				A35CB1608759AD6B82551A1B /* V2MetadataChanges.swift in Sources */,
-				30B0FFE4250620950088B3EA /* RealTimeRoomStatusType.swift in Sources */,
-				30B0FFDF250620950088B3EA /* RealTimeRoomStatusParametersType.swift in Sources */,
 				309EA5EE247BD7F3002BCA80 /* KnownCasesStorage.swift in Sources */,
-				30B0FFE0250620950088B3EA /* DeviceTagSetType.swift in Sources */,
 				309EA5F0247BD7F3002BCA80 /* Crypto.swift in Sources */,
 				FF0A67AE1DFA0CC503F98CD5 /* V2StaticResolver.swift in Sources */,
 				309EA5E5247BD7F3002BCA80 /* SecureStorage.swift in Sources */,
+				30B0FFD02502AADB0088B3EA /* HistoryDevicesStatusParametersType.swift in Sources */,
 				BF3F9946496339A36BE8267C /* V2Factory.swift in Sources */,
-				30B0FFE5250620950088B3EA /* HistoryDevicesStatusParametersType.swift in Sources */,
 				3042011C247D10D5008A07FA /* ViewController.swift in Sources */,
 				309EA608247BD7F3002BCA80 /* Contact.swift in Sources */,
+				30B0FFD62502AADB0088B3EA /* RealTimeRoomStatusType.swift in Sources */,
 				309EA60C247BD7F3002BCA80 /* BluetoothDiscoveryService.swift in Sources */,
-				30B0FFE3250620950088B3EA /* DeviceUserViewSetType.swift in Sources */,
 				2788008C40302C15A014CADF /* InfectedSetType.swift in Sources */,
 				309EA647247BD802002BCA80 /* DefaultAPP.swift in Sources */,
 				30420128247D1260008A07FA /* ServiceConfiguration.swift in Sources */,
@@ -759,11 +1095,12 @@
 				309EA5FF247BD7F3002BCA80 /* APIModel.swift in Sources */,
 				3CC39C3EBA851A2D01A3C393 /* V2MetadataParser.swift in Sources */,
 				309EA609247BD7F3002BCA80 /* ProtoExposedList.pb.swift in Sources */,
+				30B0FFCC2502AADB0088B3EA /* HistoryDevicesStatusType.swift in Sources */,
 				309EA60E247BD7F3002BCA80 /* BluetoothBroadcastService.swift in Sources */,
 				96544D5657D9ADFCDE9EB6C1 /* EventSetType.swift in Sources */,
 				95EE01CA3A6055F081366DD4 /* DeviceSetType.swift in Sources */,
-				30B0FFE2250620950088B3EA /* TagSetType.swift in Sources */,
 				309EA5E7247BD7F3002BCA80 /* ExposureDaysStorage.swift in Sources */,
+				30B0FFCE2502AADB0088B3EA /* DeviceUserViewSetType.swift in Sources */,
 				3068DC96247F250300A11024 /* Pulsator.swift in Sources */,
 				309EA600247BD7F3002BCA80 /* ExposeeModel.swift in Sources */,
 				309EA5F3247BD7F3002BCA80 /* ExposeeServiceClient.swift in Sources */,
@@ -776,6 +1113,7 @@
 				309EA5E4247BD7F3002BCA80 /* LoggingStorage.swift in Sources */,
 				309EA5E8247BD7F3002BCA80 /* ApplicationStorage.swift in Sources */,
 				309EA60B247BD7F3002BCA80 /* DP3TSDK.swift in Sources */,
+				30B0FFCA2502AADB0088B3EA /* TagSetType.swift in Sources */,
 				3042012C247D12E8008A07FA /* ODataControlling.swift in Sources */,
 				309D5B80247D331C008BFFB2 /* OnboardingErrorHandler.swift in Sources */,
 				30420121247D10D5008A07FA /* BeaconController.swift in Sources */,
@@ -810,6 +1148,7 @@
 				309D5B7D247D26A7008BFFB2 /* SceneDelegate.swift in Sources */,
 				3042011E247D10D5008A07FA /* mainViewcontroller.swift in Sources */,
 				309EA5EA247BD7F3002BCA80 /* Database.swift in Sources */,
+				30B0FFD22502AADB0088B3EA /* DeviceTagSetType.swift in Sources */,
 				309EA5F2247BD7F3002BCA80 /* Endpoints.swift in Sources */,
 				309EA60D247BD7F3002BCA80 /* BluetoothDelegate.swift in Sources */,
 				309EA607247BD7F3002BCA80 /* ApplicationDescriptor.swift in Sources */,
@@ -818,6 +1157,7 @@
 				309EA606247BD7F3002BCA80 /* DayDate.swift in Sources */,
 				309EA603247BD7F3002BCA80 /* HandshakeModel.swift in Sources */,
 				309EA5FE247BD7F3002BCA80 /* ExposeeAuthMethod.swift in Sources */,
+				30B0FFD42502AADB0088B3EA /* RealTimeRoomStatusParametersType.swift in Sources */,
 				309EA5F5247BD7F3002BCA80 /* Enviroment.swift in Sources */,
 				309D5B81247D331C008BFFB2 /* OnboardingFlowProvider.swift in Sources */,
 			);
@@ -836,7 +1176,7 @@
 /* Begin PBXTargetDependency section */
 		7A5744B921DE553700E58C7F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7A1315B41D4B982000A5DA56 /* demosafetyatW */;
+			target = 7A1315B41D4B982000A5DA56 /* safetyatW */;
 			targetProxy = 7A5744B821DE553700E58C7F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -847,6 +1187,7 @@
 			children = (
 				306F6CB7248E9E08006C8247 /* it */,
 				306F6CB9248E9E0E006C8247 /* en */,
+				302B97DA24A5F804009380E4 /* es */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -857,6 +1198,7 @@
 				306F6CBC248E9ED1006C8247 /* it */,
 				306F6CBF248E9EDE006C8247 /* en */,
 				306F6CC0248EA1E4006C8247 /* Base */,
+				302B97D924A5F804009380E4 /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -864,6 +1206,69 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		306F6CAD24894647006C8247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = safetyatW/safetyW.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 29;
+				DEVELOPMENT_TEAM = ZAJ7DDZHA7;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "safetyatW copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.safetyatWTEST;
+				PRODUCT_NAME = "Safety@WorkTEST";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG CALIBRATION BACKEND_NOTIF";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		306F6CAE24894647006C8247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = safetyatW/safetyW.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 29;
+				DEVELOPMENT_TEAM = ZAJ7DDZHA7;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "safetyatW copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.safetyatWTEST;
+				PRODUCT_NAME = "Safety@WorkTEST";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		7A1315C71D4B982000A5DA56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -998,14 +1403,14 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = demo.sap.safetyatwork;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.safetyW;
 				PRODUCT_NAME = "Safety@Work";
-				PROVISIONING_PROFILE_SPECIFIER = "demo.sap.safetyatwork dev";
+				PROVISIONING_PROFILE_SPECIFIER = "safetyW dev";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG CALIBRATION";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1029,13 +1434,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = demo.sap.safetyatwork;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.safetyW;
 				PRODUCT_NAME = "Safety@Work";
 				PROVISIONING_PROFILE_SPECIFIER = safetyAtworksDistribution;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1095,6 +1500,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		306F6CAC24894647006C8247 /* Build configuration list for PBXNativeTarget "safetyatWTEST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306F6CAD24894647006C8247 /* Debug */,
+				306F6CAE24894647006C8247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "safetyatW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1104,7 +1518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "demosafetyatW" */ = {
+		7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "safetyatW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A1315CA1D4B982000A5DA56 /* Debug */,
@@ -1125,6 +1539,38 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		306F6C3324894647006C8247 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		306F6C3524894647006C8247 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.0;
+			};
+		};
+		306F6C3724894647006C8247 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+		306F6C3924894647006C8247 /* XCRemoteSwiftPackageReference "Swift-JWT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IBM-Swift/Swift-JWT.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.6.1;
+			};
+		};
 		309EA648247BD8E9002BCA80 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -1160,6 +1606,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		306F6C3224894647006C8247 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 306F6C3324894647006C8247 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		306F6C3424894647006C8247 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 306F6C3524894647006C8247 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		306F6C3624894647006C8247 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 306F6C3724894647006C8247 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		306F6C3824894647006C8247 /* SwiftJWT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 306F6C3924894647006C8247 /* XCRemoteSwiftPackageReference "Swift-JWT" */;
+			productName = SwiftJWT;
+		};
 		309EA649247BD8E9002BCA80 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 309EA648247BD8E9002BCA80 /* XCRemoteSwiftPackageReference "Alamofire" */;

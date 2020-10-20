@@ -1,0 +1,694 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)
+// swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SAPOfflineOData
+import Foundation
+import SAPCommon
+import SAPFoundation
+import SAPOData
+@_exported import SAPOfflineOData
+import Swift
+@_inheritsConvenienceInitializers open class OfflineODataRequestOptions : SAPOData.RequestOptions {
+  override public init()
+  open var removeCreatedEntityAfterUpload: Swift.Bool {
+    get
+    set(value)
+  }
+  open var unmodifiableRequest: Swift.Bool {
+    get
+    set(value)
+  }
+  open var transactionID: SAPOfflineOData.TransactionID? {
+    get
+    set(value)
+  }
+  open var uploadCategory: SAPOfflineOData.UploadCategory? {
+    get
+    set(value)
+  }
+  open var customHeaderFormat: Swift.String? {
+    get
+    set(value)
+  }
+  @objc deinit
+}
+public enum TransactionIDType {
+  case stringLiteral
+  case entityValue
+  case useGeneratedIDForTransactionID
+  public static func == (a: SAPOfflineOData.TransactionIDType, b: SAPOfflineOData.TransactionIDType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@_hasMissingDesignatedInitializers public class TransactionID {
+  public static let useGeneratedIDForTransactionID: SAPOfflineOData.TransactionID
+  public init(entity: SAPOData.EntityValue)
+  public init(stringLiteral: Swift.String) throws
+  public var transactionIDType: SAPOfflineOData.TransactionIDType {
+    get
+  }
+  public var stringLiteral: Swift.String {
+    get
+  }
+  public var entityValue: SAPOData.EntityValue {
+    get
+  }
+  @objc deinit
+}
+public enum UploadCategoryType {
+  case stringLiteral
+  case entityValue
+  case useGeneratedIDForUploadCategory
+  public static func == (a: SAPOfflineOData.UploadCategoryType, b: SAPOfflineOData.UploadCategoryType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@_hasMissingDesignatedInitializers public class UploadCategory {
+  public static func useGeneratedIDForUploadCategory() -> SAPOfflineOData.UploadCategory
+  public init(entity: SAPOData.EntityValue)
+  public init(stringLiteral: Swift.String) throws
+  public var uploadCategoryType: SAPOfflineOData.UploadCategoryType {
+    get
+  }
+  public var stringLiteral: Swift.String {
+    get
+  }
+  public var entityValue: SAPOData.EntityValue {
+    get
+  }
+  @objc deinit
+}
+public struct OfflineODataDefiningQuery {
+  public var name: Swift.String
+  public var query: Swift.String
+  public var automaticallyRetrievesStreams: Swift.Bool
+  public init(name: Swift.String, query: Swift.String, automaticallyRetrievesStreams: Swift.Bool)
+  public init(name: Swift.String, query: SAPOData.DataQuery, automaticallyRetrievesStreams: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers public class OfflineODataCustomHeader : SAPOData.EntityValue {
+  open class var headerID: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var headerID: Swift.Int {
+    get
+    set(value)
+  }
+  override open var isProxy: Swift.Bool {
+    get
+  }
+  open class func key(headerID: Swift.Int) -> SAPOData.EntityKey
+  open class var name: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var name: Swift.String? {
+    get
+    set(value)
+  }
+  open class var value: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var value: Swift.String? {
+    get
+    set(value)
+  }
+  @objc deinit
+  override public init(withDefaults: Swift.Bool = super, type: SAPOData.EntityType? = super)
+  override public init()
+}
+@_hasMissingDesignatedInitializers public class OfflineODataErrorArchiveEntity : SAPOData.EntityValue {
+  open class var affectedEntity: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var affectedEntity: SAPOData.EntityValue? {
+    get
+    set(value)
+  }
+  open class var code: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var code: Swift.String? {
+    get
+    set(value)
+  }
+  open class var customHeaders: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var customHeaders: Swift.Array<SAPOfflineOData.OfflineODataCustomHeader> {
+    get
+    set(value)
+  }
+  open class var customTag: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var customTag: Swift.String? {
+    get
+    set(value)
+  }
+  open class var dependentRequests: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var dependentRequests: Swift.Array<SAPOfflineOData.OfflineODataRequest> {
+    get
+    set(value)
+  }
+  open class var domain: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var domain: Swift.String {
+    get
+    set(value)
+  }
+  open class var httpStatusCode: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var httpStatusCode: Swift.Int? {
+    get
+    set(value)
+  }
+  open class var innerError: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var innerError: Swift.String? {
+    get
+    set(value)
+  }
+  override open var isProxy: Swift.Bool {
+    get
+  }
+  open class var message: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var message: Swift.String? {
+    get
+    set(value)
+  }
+  open class var requestBody: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var requestBody: Swift.String? {
+    get
+    set(value)
+  }
+  open class var requestEntity: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var requestEntity: SAPOData.EntityValue? {
+    get
+    set(value)
+  }
+  open class var requestID: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var requestID: Swift.Int64 {
+    get
+    set(value)
+  }
+  open class var requestMethod: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var requestMethod: Swift.String? {
+    get
+    set(value)
+  }
+  open class var requestURL: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var requestURL: Swift.String? {
+    get
+    set(value)
+  }
+  @objc deinit
+  override public init(withDefaults: Swift.Bool = super, type: SAPOData.EntityType? = super)
+  override public init()
+}
+@_hasMissingDesignatedInitializers public class OfflineODataEvent : SAPOData.EntityValue {
+  open class var details: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var details: Swift.String? {
+    get
+    set(value)
+  }
+  open class var id: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var id: Swift.Int64 {
+    get
+    set(value)
+  }
+  override open var isProxy: Swift.Bool {
+    get
+  }
+  open class var time: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var time: SAPOData.GlobalDateTime? {
+    get
+    set(value)
+  }
+  open class var eventType: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var eventType: Swift.String {
+    get
+    set(value)
+  }
+  @objc deinit
+  override public init(withDefaults: Swift.Bool = super, type: SAPOData.EntityType? = super)
+  override public init()
+}
+@_hasMissingDesignatedInitializers public class OfflineODataRequest : SAPOData.EntityValue {
+  open class var body: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var body: Swift.String? {
+    get
+    set(value)
+  }
+  override open var isProxy: Swift.Bool {
+    get
+  }
+  open class var method: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var method: Swift.String {
+    get
+    set(value)
+  }
+  open class var requestID: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var requestID: Swift.Int64 {
+    get
+    set(value)
+  }
+  open class var status: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var status: Swift.String {
+    get
+    set(value)
+  }
+  open class var url: SAPOData.Property {
+    get
+    set(value)
+  }
+  open var url: Swift.String? {
+    get
+    set(value)
+  }
+  @objc deinit
+  override public init(withDefaults: Swift.Bool = super, type: SAPOData.EntityType? = super)
+  override public init()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class OfflineODataQueryFunction : SAPOData.QueryFunction {
+  public static func isLocal() -> SAPOData.QueryFilter
+  public static func hasPendingChanges() -> SAPOData.QueryFilter
+  public static func inErrorState() -> SAPOData.QueryFilter
+  public static func entityExists(_ property: SAPOData.DataPath) -> SAPOData.QueryFilter
+  public static func upsertedLastDownload() -> SAPOData.QueryFilter
+  @objc deinit
+}
+open class OfflineODataProvider : SAPOData.DataServiceProvider {
+  public var providerParameters: SAPOfflineOData.OfflineODataParameters {
+    get
+  }
+  public var serviceOptions: SAPOfflineOData.OfflineODataServiceOptions
+  public static var libraryVersion: Swift.String {
+    get
+  }
+  public init(serviceRoot: Foundation.URL, parameters: SAPOfflineOData.OfflineODataParameters, sapURLSession: SAPFoundation.SAPURLSession, delegate: SAPOfflineOData.OfflineODataDelegate? = nil) throws
+  convenience public init(serviceRoot: Foundation.URL, parameters: SAPOfflineOData.OfflineODataParameters) throws
+  public init(serviceRoot: Foundation.URL, parameters: SAPOfflineOData.OfflineODataParameters, delegate: SAPOfflineOData.OfflineODataDelegate? = nil) throws
+  open var serviceName: Swift.String {
+    get
+  }
+  open var serviceName_NS: Foundation.NSString {
+    get
+  }
+  open var hasMetadata: Swift.Bool {
+    get
+  }
+  open var metadata: SAPOData.CSDLDocument {
+    get
+    set(value)
+  }
+  public var logger: SAPCommon.Logger {
+    get
+    set(value)
+  }
+  public static func clear(at path: Foundation.URL?, withName name: Swift.String?) throws
+  public func clear() throws
+  public func close() throws
+  public func requestQueueIsEmpty() throws -> Swift.Bool
+  public func hasPendingDownload() throws -> Swift.Bool
+  public func hasPendingUpload() throws -> Swift.Bool
+  public func open(completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func upload(completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func upload(categories: [SAPOfflineOData.UploadCategory], completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func download(completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func forceReauthentication(completionHandler: @escaping () -> Swift.Void)
+  public func download(withSubset subset: [SAPOfflineOData.OfflineODataDefiningQuery], completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func cancelDownload() throws
+  public func cancelUpload() throws
+  public func sendStore(completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func add(definingQuery: SAPOfflineOData.OfflineODataDefiningQuery) throws
+  public func remove(definingQuery: SAPOfflineOData.OfflineODataDefiningQuery) throws
+  open func createEntity(_ entity: SAPOData.EntityValue, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func createLink(from: SAPOData.EntityValue, property: SAPOData.Property, to: SAPOData.EntityValue, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func createMedia(entity: SAPOData.EntityValue, content: SAPOData.StreamBase, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func deleteByQuery(_ query: SAPOData.DataQuery, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func deleteEntity(_ entity: SAPOData.EntityValue, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func deleteStream(entity: SAPOData.EntityValue, link: SAPOData.StreamLink, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func deleteLink(from: SAPOData.EntityValue, property: SAPOData.Property, to: SAPOData.EntityValue, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func downloadMedia(entity: SAPOData.EntityValue, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws -> SAPOData.ByteStream
+  open func downloadStream(entity: SAPOData.EntityValue, link: SAPOData.StreamLink, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws -> SAPOData.ByteStream
+  open func executeQuery(_ query: SAPOData.DataQuery, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws -> SAPOData.QueryResult
+  open func fetchErrorArchive(query: SAPOData.DataQuery = DataQuery()) throws -> Swift.Array<SAPOfflineOData.OfflineODataErrorArchiveEntity>
+  open func fetchEventLog(query: SAPOData.DataQuery = DataQuery()) throws -> Swift.Array<SAPOfflineOData.OfflineODataEvent>
+  open func processBatch(_ batch: SAPOData.RequestBatch, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func updateEntity(_ entity: SAPOData.EntityValue, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func updateLink(from: SAPOData.EntityValue, property: SAPOData.Property, to: SAPOData.EntityValue, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func uploadMedia(entity: SAPOData.EntityValue, content: SAPOData.StreamBase, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  open func uploadStream(entity: SAPOData.EntityValue, link: SAPOData.StreamLink, content: SAPOData.StreamBase, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws
+  public func logRequestQueue(level: SAPCommon.LogLevel = SAPCommon.LogLevel.debug) throws
+  public func logDefiningQueries(level: SAPCommon.LogLevel = SAPCommon.LogLevel.debug) throws
+  open func executeMethod(_ method: SAPOData.DataMethod, parameters: SAPOData.ParameterList, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws -> SAPOData.DataValue?
+  open func pingServer(headers: SAPOData.HTTPHeaders = HTTPHeaders.empty, options: SAPOData.RequestOptions = RequestOptions.none) throws
+  open func undoPendingChanges(for entity: SAPOData.EntityValue) throws
+  open func loadMetadata(headers: SAPOData.HTTPHeaders = HTTPHeaders.empty, options: SAPOData.RequestOptions = RequestOptions.none) throws
+  open func unloadMetadata() throws
+  open func fetchMetadata(headers: SAPOData.HTTPHeaders = HTTPHeaders.empty, options: SAPOData.RequestOptions = RequestOptions.none) throws -> SAPOData.CSDLDocument
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class OfflineODataProgressInternal : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public var bytesSent: Swift.Int
+  @objc public var bytesReceived: Swift.Int
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class OfflineODataFileDownloadProgressInternal : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public var bytesReceived: Swift.Int
+  @objc public var fileSize: Swift.Int
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class OfflineODataSendStoreProgressInternal : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public var currentFileBytesSent: Swift.Int
+  @objc public var currentFileSize: Swift.Int
+  @objc public var currentFileIndex: Swift.Int
+  @objc public var currentFileName: Swift.String
+  @objc public var totalNumberOfFiles: Swift.Int
+  @objc public var totalSize: Swift.Int
+  @objc public var totalBytesSent: Swift.Int
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class OfflineODataFailedRequestInternal : ObjectiveC.NSObject {
+  @objc public var httpStatusCode: Swift.Int
+  @objc public var requestID: Swift.Int
+  @objc public var customTag: Swift.String?
+  @objc public var errorCode: Swift.String
+  @objc public var errorMessage: Swift.String
+  @objc public var innerError: Swift.String?
+  @objc public var requestHTTPMethod: Swift.String
+  @objc public var requestURL: Swift.String
+  @objc public var requestBody: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class OfflineODataDelegateInternal : ObjectiveC.NSObject {
+  @objc public func downloadProgress(_ progressStatus: SAPOfflineOData.OfflineODataProgressInternal)
+  @objc public func fileDownloadProgress(_ progressStatus: SAPOfflineOData.OfflineODataFileDownloadProgressInternal)
+  @objc public func uploadProgress(_ progressStatus: SAPOfflineOData.OfflineODataProgressInternal)
+  @objc public func sendStoreProgress(_ progressStatus: SAPOfflineOData.OfflineODataSendStoreProgressInternal)
+  @objc public func requestFailed(_ request: SAPOfflineOData.OfflineODataFailedRequestInternal)
+  @objc public func stateChanged(_ newState: Swift.Int)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum OfflineODataClientLogLevelInternal : Swift.Int {
+  case None = 1
+  case Fatal = 2
+  case Error = 3
+  case Warning = 4
+  case Info = 5
+  case Debug = 6
+  case All = 7
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class OfflineODataLoggerInternal : ObjectiveC.NSObject {
+  public var logger: SAPCommon.Logger {
+    get
+    set(value)
+  }
+  @objc public func getLogLevel() -> SAPOfflineOData.OfflineODataClientLogLevelInternal
+  @objc public func log(_ clientLogLevel: SAPOfflineOData.OfflineODataClientLogLevelInternal, message: Swift.String)
+  @objc deinit
+}
+public struct OfflineODataProgress {
+  public var bytesSent: Swift.Int {
+    get
+  }
+  public var bytesReceived: Swift.Int {
+    get
+  }
+}
+public struct OfflineODataFileDownloadProgress {
+  public var bytesReceived: Swift.Int {
+    get
+  }
+  public var fileSize: Swift.Int {
+    get
+  }
+}
+public struct OfflineODataSendStoreProgress {
+  public var currentFileBytesSent: Swift.Int {
+    get
+  }
+  public var currentFileSize: Swift.Int {
+    get
+  }
+  public var currentFileIndex: Swift.Int {
+    get
+  }
+  public var currentFileName: Swift.String {
+    get
+  }
+  public var totalNumberOfFiles: Swift.Int {
+    get
+  }
+  public var totalSize: Swift.Int {
+    get
+  }
+  public var totalBytesSent: Swift.Int {
+    get
+  }
+}
+public struct OfflineODataFailedRequest {
+  public var httpStatusCode: Swift.Int {
+    get
+  }
+  public var requestID: Swift.Int {
+    get
+  }
+  public var customTag: Swift.String? {
+    get
+  }
+  public var errorCode: Swift.String {
+    get
+  }
+  public var errorMessage: Swift.String {
+    get
+  }
+  public var innerError: Swift.String? {
+    get
+  }
+  public var requestHTTPMethod: Swift.String {
+    get
+  }
+  public var requestURL: Foundation.URL {
+    get
+  }
+  public var requestBody: Swift.String? {
+    get
+  }
+}
+public struct OfflineODataStoreState : Swift.OptionSet {
+  public init(rawValue: Swift.Int)
+  public let rawValue: Swift.Int
+  public static let opening: SAPOfflineOData.OfflineODataStoreState
+  public static let initializing: SAPOfflineOData.OfflineODataStoreState
+  public static let initialCommunication: SAPOfflineOData.OfflineODataStoreState
+  public static let fileDownloading: SAPOfflineOData.OfflineODataStoreState
+  public static let downloading: SAPOfflineOData.OfflineODataStoreState
+  public static let uploading: SAPOfflineOData.OfflineODataStoreState
+  public static let open: SAPOfflineOData.OfflineODataStoreState
+  public static let closed: SAPOfflineOData.OfflineODataStoreState
+  public static let sendingStore: SAPOfflineOData.OfflineODataStoreState
+  public typealias Element = SAPOfflineOData.OfflineODataStoreState
+  public typealias ArrayLiteralElement = SAPOfflineOData.OfflineODataStoreState
+  public typealias RawValue = Swift.Int
+}
+public protocol OfflineODataDelegate {
+  func offlineODataProvider(_ provider: SAPOfflineOData.OfflineODataProvider, didUpdateDownloadProgress progress: SAPOfflineOData.OfflineODataProgress)
+  func offlineODataProvider(_ provider: SAPOfflineOData.OfflineODataProvider, didUpdateFileDownloadProgress progress: SAPOfflineOData.OfflineODataFileDownloadProgress)
+  func offlineODataProvider(_ provider: SAPOfflineOData.OfflineODataProvider, didUpdateUploadProgress progress: SAPOfflineOData.OfflineODataProgress)
+  func offlineODataProvider(_ provider: SAPOfflineOData.OfflineODataProvider, requestDidFail request: SAPOfflineOData.OfflineODataFailedRequest)
+  func offlineODataProvider(_ provider: SAPOfflineOData.OfflineODataProvider, stateDidChange newState: SAPOfflineOData.OfflineODataStoreState)
+  func offlineODataProvider(_ provider: SAPOfflineOData.OfflineODataProvider, didUpdateSendStoreProgress progress: SAPOfflineOData.OfflineODataSendStoreProgress)
+}
+extension OfflineODataDelegate {
+  public func offlineODataProvider(_ provider: SAPOfflineOData.OfflineODataProvider, didUpdateSendStoreProgress progress: SAPOfflineOData.OfflineODataSendStoreProgress)
+}
+public enum OfflineODataError : Swift.Error {
+  case error(code: Swift.Int, message: Swift.String)
+  public var message: Swift.String? {
+    get
+  }
+  public var code: Swift.Int {
+    get
+  }
+  public func toString() -> Swift.String
+}
+extension OfflineODataError : SAPCommon.SAPError {
+  public var description: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class OfflineODataMetadata {
+  @_hasMissingDesignatedInitializers public class EntityTypes {
+    public static var errorArchiveEntity: SAPOData.EntityType {
+      get
+    }
+    public static var event: SAPOData.EntityType {
+      get
+    }
+    public static var request: SAPOData.EntityType {
+      get
+    }
+    public static var customHeader: SAPOData.EntityType {
+      get
+    }
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers public class EntitySets {
+    public static var errorArchive: SAPOData.EntitySet {
+      get
+    }
+    public static var eventLog: SAPOData.EntitySet {
+      get
+    }
+    @objc deinit
+  }
+  @objc deinit
+}
+extension DataService where Provider : SAPOfflineOData.OfflineODataProvider {
+  public func clear() throws
+  public func close() throws
+  public func requestQueueIsEmpty() throws -> Swift.Bool
+  public func hasPendingDownload() throws -> Swift.Bool
+  public func hasPendingUpload() throws -> Swift.Bool
+  public func open(completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func upload(completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func upload(categories: [SAPOfflineOData.UploadCategory], completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func download(completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func download(withSubset subset: [SAPOfflineOData.OfflineODataDefiningQuery], completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func add(definingQuery: SAPOfflineOData.OfflineODataDefiningQuery) throws
+  public func remove(definingQuery: SAPOfflineOData.OfflineODataDefiningQuery) throws
+  public func cancelDownload() throws
+  public func cancelUpload() throws
+  public func sendStore(completionHandler: @escaping (SAPOfflineOData.OfflineODataError?) -> Swift.Void)
+  public func forceReauthentication(completionHandler: @escaping () -> Swift.Void)
+  public func logRequestQueue(level: SAPCommon.LogLevel = SAPCommon.LogLevel.debug) throws
+  public func logDefiningQueries(level: SAPCommon.LogLevel = SAPCommon.LogLevel.debug) throws
+  public func fetchErrorArchive(query: SAPOData.DataQuery = DataQuery()) throws -> Swift.Array<SAPOfflineOData.OfflineODataErrorArchiveEntity>
+  public func fetchEventLog(query: SAPOData.DataQuery = DataQuery()) throws -> Swift.Array<SAPOfflineOData.OfflineODataEvent>
+  public func undoPendingChanges(for entity: SAPOData.EntityValue) throws
+  public func executeMethod(_ method: SAPOData.DataMethod, parameters: SAPOData.ParameterList, headers: SAPOData.HTTPHeaders, options: SAPOData.RequestOptions) throws -> SAPOData.DataValue?
+}
+public class OfflineODataParameters {
+  public var storeEncryptionKey: Swift.String?
+  public var storeName: Swift.String?
+  public var storePath: Foundation.URL?
+  public var urlSuffix: Swift.String?
+  public var extraStreamParameters: Swift.String?
+  public var customHeaders: [Swift.String : Swift.String]
+  public var customCookies: [Swift.String : Swift.String]
+  public var enableRepeatableRequests: Swift.Bool
+  public static let noPaging: Swift.Int?
+  public var pageSize: Swift.Int?
+  public var timeout: Swift.Int32?
+  public var enableRequestQueueOptimization: Swift.Bool
+  public var enableUndoLocalCreation: Swift.Bool
+  public var enableTransactionBuilder: Swift.Bool
+  public var enableIndividualErrorArchiveDeletion: Swift.Bool
+  public init()
+  @objc deinit
+}
+public struct OfflineODataServiceOptions {
+  public var supportsBatch: Swift.Bool {
+    get
+    set(value)
+  }
+  public var supportsPatch: Swift.Bool {
+    get
+    set(value)
+  }
+  public var supportsBind: Swift.Bool {
+    get
+    set(value)
+  }
+  public var csdlOptions: Swift.Int {
+    get
+    set(value)
+  }
+}
+extension SAPOfflineOData.TransactionIDType : Swift.Equatable {}
+extension SAPOfflineOData.TransactionIDType : Swift.Hashable {}
+extension SAPOfflineOData.UploadCategoryType : Swift.Equatable {}
+extension SAPOfflineOData.UploadCategoryType : Swift.Hashable {}
+extension SAPOfflineOData.OfflineODataClientLogLevelInternal : Swift.Equatable {}
+extension SAPOfflineOData.OfflineODataClientLogLevelInternal : Swift.Hashable {}
+extension SAPOfflineOData.OfflineODataClientLogLevelInternal : Swift.RawRepresentable {}

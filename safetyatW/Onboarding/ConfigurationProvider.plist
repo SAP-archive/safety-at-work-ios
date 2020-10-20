@@ -8,36 +8,36 @@
 			<key>config</key>
 			<dict>
 				<key>oauth2.authorizationEndpoint</key>
-				<string>https://pocs-pocs-com-sap-safetyatwork.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize</string>
+				<string>https://sawprod-italy-it-sap-safetyatwork.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/authorize</string>
 				<key>oauth2.clients</key>
 				<array>
 					<dict>
 						<key>clientID</key>
-						<string>bbf958ea-c794-44e7-999c-a0c3a1762cd4</string>
+						<string>e4a7d9b8-c98d-49af-b9ea-b9696235164a</string>
 						<key>grantType</key>
 						<string>authorization_code</string>
 						<key>redirectURL</key>
-						<string>https://pocs-pocs-com-sap-safetyatwork.cfapps.eu10.hana.ondemand.com</string>
+						<string>https://sawprod-italy-it-sap-safetyatwork.cfapps.eu10.hana.ondemand.com</string>
 					</dict>
 				</array>
 				<key>oauth2.tokenEndpoint</key>
-				<string>https://pocs-pocs-com-sap-safetyatwork.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token</string>
+				<string>https://sawprod-italy-it-sap-safetyatwork.cfapps.eu10.hana.ondemand.com/oauth2/api/v1/token</string>
 			</dict>
 			<key>type</key>
 			<string>oauth2</string>
 		</dict>
 	</array>
 	<key>host</key>
-	<string>pocs-pocs-com-sap-safetyatwork.cfapps.eu10.hana.ondemand.com</string>
+	<string>sawprod-italy-it-sap-safetyatwork.cfapps.eu10.hana.ondemand.com</string>
 	<key>protocol</key>
 	<string>https</string>
 	<key>scpAppId</key>
-	<string>com.sap.safetyatwork</string>
+	<string>it.sap.safetyatwork</string>
 	<key>HRphoneNumber</key>
 	<string>12345678</string>
 	<key>BeaconUUID</key>
-	<string>A2FA7357-C8CD-4B95-98FD-9D091CE43337</string>
+	<string>2D7A9F0C-E0E8-4CC9-A71B-A21DB2D034A1</string>
 	<key>appID</key>
-	<string>com.sap.safetyatwork</string>
+	<string>it.sap.safetyatwork</string>
 </dict>
 </plist>

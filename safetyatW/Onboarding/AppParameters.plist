@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Application Identifier</key>
-	<string>com.sap.safetyatwork</string>
+	<string>it.sap.safetyatwork</string>
 	<key>Destinations</key>
 	<dict>
 		<key>safetyatworkdestination</key>

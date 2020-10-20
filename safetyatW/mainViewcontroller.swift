@@ -106,8 +106,24 @@ class mainViewcontroller: UIViewController,CLLocationManagerDelegate {
         
         
         self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
         locationManager.requestAlwaysAuthorization()
         
+        
+        if #available(iOS 14.0, *) {
+                   if locationManager != nil {
+                    switch locationManager.accuracyAuthorization {
+                       case .fullAccuracy:
+                           print("Full Accuracy")
+                       case .reducedAccuracy:
+                           print("Reduced Accuracy")
+                        
+                       @unknown default:
+                           print("Unknown Precise Location...")
+                       }
+                   }
+               }
         
         //retrieve beacons
         let layer = ODataLayer.shared
@@ -151,15 +167,16 @@ class mainViewcontroller: UIViewController,CLLocationManagerDelegate {
 //               {
 //                beaconRegion = CLBeaconRegion(uuid:UUID.init(uuidString:"A2FA7357-C8CD-4B95-98FD-9D091CE43337")!, identifier:"")
         let beaconUuid = ServiceConfiguration.getBeaconUUID()
+        
         let constraint = CLBeaconIdentityConstraint(uuid: UUID.init(uuidString:beaconUuid)!)
-        let beaconRegion2 = CLBeaconRegion(beaconIdentityConstraint: constraint, identifier: "")
-        //                beaconRegion.notifyOnEntry = true
+        let beaconRegion2 = CLBeaconRegion(beaconIdentityConstraint: constraint, identifier: beaconUuid)
+      //  beaconRegion2.notifyOnEntry = true
         beaconRegion2.notifyOnExit = true
         beaconRegion2.notifyEntryStateOnDisplay = true
-        self.locationManager.startMonitoring(for: beaconRegion2)
+      self.locationManager.startMonitoring(for: beaconRegion2)
         
         //     locationManager.startRangingBeacons(in: beaconRegion)
-    //    locationManager.startRangingBeacons(satisfying: CLBeaconIdentityConstraint.init(uuid:UUID.init(uuidString:"E20A39F4-73F5-4BC4-A12F-17D1AD07A961")!))
+    //    locationManager.startRangingBeacons(satisfying: constraint)
 //                }
 //            }
 //            catch{
@@ -329,11 +346,13 @@ class mainViewcontroller: UIViewController,CLLocationManagerDelegate {
                         break
                     case .immediate:
                     // Display information about the relevant exhibit.
-             //           NSLog("immediate")
+                        NSLog("immediate")
+                        NSLog("😃 immediate!")
+                          sentIminroom(beacon: nearestBeacon)
                         break
                     case .far:
                     // Display information about the relevant exhibit.
-             //           NSLog("far")
+                        NSLog("far")
                         break
                 default:
                    // Dismiss exhibit information, if it is displayed.
@@ -350,6 +369,11 @@ class mainViewcontroller: UIViewController,CLLocationManagerDelegate {
     
     func sentIminroom(beacon:CLBeacon){
         
+        let uuid = beacon.uuid.uuidString;
+        let major = beacon.major.stringValue;
+        let minor = beacon.minor.stringValue;
+        
+        let uuidparam = uuid+"|"+major+"|"+minor;
         
         if(UserDefaults.standard.object(forKey: "iminroomcreationTime")==nil){
                 do{
@@ -358,7 +382,7 @@ class mainViewcontroller: UIViewController,CLLocationManagerDelegate {
                     let rssi = BigInteger.init(beacon.rssi)
                   
                     if(ODataLayer.shared != nil){
-                        ODataLayer.shared.iminRoom(myId: EPHID.hexEncodedString, UUIDBeacon: beacon.uuid.uuidString, RSSI:rssi )
+                        ODataLayer.shared.iminRoom(myId: EPHID.hexEncodedString, UUIDBeacon: uuidparam, RSSI:rssi )
                     }
                         UserDefaults.standard.set(Date(), forKey:"iminroomcreationTime")
                    }
@@ -380,7 +404,7 @@ class mainViewcontroller: UIViewController,CLLocationManagerDelegate {
                                 let EPHID = try crypto.getCurrentEphID()
                                 let rssi = BigInteger.init(beacon.rssi)
                                 if(ODataLayer.shared != nil){
-                                        ODataLayer.shared.iminRoom(myId: EPHID.hexEncodedString, UUIDBeacon: beacon.uuid.uuidString, RSSI:rssi )
+                                        ODataLayer.shared.iminRoom(myId: EPHID.hexEncodedString, UUIDBeacon: uuidparam, RSSI:rssi )
                                 }
                            }
                            catch{
@@ -406,10 +430,13 @@ class mainViewcontroller: UIViewController,CLLocationManagerDelegate {
 //                  let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
 //                  UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
 
-       let beaconRegion = region as! CLBeaconRegion
+      // let beaconRegion = region as! CLBeaconRegion
        
-        manager.startRangingBeacons(satisfying: CLBeaconIdentityConstraint.init(uuid:beaconRegion.uuid))
-
+       // manager.startRangingBeacons(satisfying: CLBeaconIdentityConstraint.init(uuid:beaconRegion.uuid))
+        let beaconUuid = ServiceConfiguration.getBeaconUUID()
+        
+        let constraint = CLBeaconIdentityConstraint(uuid: UUID.init(uuidString:beaconUuid)!)
+        let beaconRegion2 = CLBeaconRegion(beaconIdentityConstraint: constraint, identifier: beaconUuid)
     }
     
    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {

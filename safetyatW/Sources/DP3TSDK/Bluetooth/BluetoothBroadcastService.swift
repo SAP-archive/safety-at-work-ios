@@ -115,11 +115,15 @@ extension BluetoothBroadcastService: CBPeripheralManagerDelegate {
         #if CALIBRATION
             logger?.log(type: .sender, state: peripheral.state, prefix: "peripheralManagerdidAddservice")
         #endif
-
+//        do{
+//        var data = try crypto!.getCurrentEphID()
         peripheralManager?.startAdvertising([
             CBAdvertisementDataServiceUUIDsKey: [Default.shared.parameters.bluetooth.serviceCBUUID],
-            CBAdvertisementDataLocalNameKey: "",
+            CBAdvertisementDataLocalNameKey: ""
         ])
+//        }catch{
+//
+//        }
     }
 
 

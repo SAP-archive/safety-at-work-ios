@@ -208,7 +208,7 @@ extension BluetoothDiscoveryService: CBCentralManagerDelegate {
             #endif
 
             //Android devices go here
-            
+          
             //TEST
             if(RSSI.intValue > -99){  //attenuation (usually 12) -RSSI <73, i need more near to send notification set  55
                   
@@ -240,7 +240,7 @@ extension BluetoothDiscoveryService: CBCentralManagerDelegate {
                    
                    }
             
-            
+           
             
         } else {
             // Only connect if we didn't got a EphId in the Advertisement

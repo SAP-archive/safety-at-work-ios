@@ -742,17 +742,25 @@ func getBeaconDevices() -> [DeviceSetType]{
         
         let odataProvider = OnlineODataProvider(serviceName: "V2", serviceRoot: configurationURL, sapURLSession: sapUrlSession)
         odataProvider.serviceOptions.checkVersion = false
-        let v2 = V2(provider: odataProvider)
+      //  let v2 = V2(provider: odataProvider)
         
         let event = EventSetType()
         event.createdAt = LocalDateTime.now()
         event.sourceEID = myId
         event.targetIED = UUIDBeacon
         event.distance = RSSI
+   
+       
+        
+        
         
         do {
-            try v2.createEntity(event)
-            NSLog("😃 created inroom!")
+           // try v2.createEntity(event)
+            
+            sendinRoomQueue(sourceEHPID: myId, BeaconUUID: UUIDBeacon, distance: RSSI.toString()) { (success) in
+                NSLog("😃 created inroom!")
+            }
+           
             
         }
         catch{
@@ -760,6 +768,93 @@ func getBeaconDevices() -> [DeviceSetType]{
         }
            
        }
+    
+    func sendinRoomQueue(sourceEHPID:String,BeaconUUID:String,distance:String,finished: @escaping((_ isSuccess: Bool)->Void)) {
+        let settingsParameters = SAPcpmsSettingsParameters(backendURL: ServiceConfiguration.getHostUrl(), applicationID: ServiceConfiguration.getScpAppId())
+        
+        let configurationURL = URL(string: settingsParameters.backendURL.appendingPathComponent("xsjsFunctions").absoluteString)!
+        let center = UNUserNotificationCenter.current()
+        print(configurationURL.absoluteString)
+        //                let username = UserDefaults.standard.object(forKey: Networking.usernameKey) as! String
+        var request = URLRequest(url: configurationURL)
+        request.httpMethod = "POST"
+        
+        var array = Array<Any>.init()
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let convertedDate = formatter.string(from: Date.init())
+        
+        let dictionary = ["CreatedAt":convertedDate,
+                          "Distance":distance,
+                          "SourceEID":sourceEHPID,
+                          "TargetIED":BeaconUUID] as [String : Any]
+        array.append(dictionary)
+        
+        let json: [String: Any] = [
+            "function": "importEvents",
+            "payload":[
+                "events":
+                array    ]
+        ]
+            
+            
+            
+            let jsonData = try? JSONSerialization.data(withJSONObject:json)
+            request.httpBody = jsonData //try? JSONSerialization.data(withJSONObject: data, options: [])
+            //            request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            let session = sapUrlSession
+     
+            let task = session!.dataTask(with: request as URLRequest, completionHandler: {(data, response, error) in
+                //  print(response!)
+                do {
+                    NSLog("✅ inviato json")
+                    NSLog("❌  errorev: \(String(describing: error?.localizedDescription))")
+                  
+                    
+                    if(data != nil){
+                        let dataString = String(data: data!, encoding: .utf8)
+                        //non è json
+                        NSLog("✅ \(String(describing: dataString))")
+                        
+                        let json = try JSONSerialization.jsonObject(with: data!) as! NSDictionary
+                        if(json.allKeys[0] as! String == "error"){
+                            let meet = json.value(forKey: "error") as! NSDictionary
+                            
+                            let errormessage=meet.value(forKey: "message")
+                            NSLog(errormessage as! String)
+                            finished(false)
+                        }
+                            
+                        else{
+                            if(json.allKeys.count>0){
+                                let meet = json.value(forKey: "value") as! NSDictionary
+                                let numbersIn = meet["countImportedEvents"] as! Int
+                                NSLog("countImportedEvents \(numbersIn)")
+                                finished(true)
+                            }
+                            else
+                                
+                            {
+                                finished(false)
+                            }
+                        }
+                        
+                        
+                        
+                        
+                    }
+                    
+                } catch {
+                    print(error)
+                     NSLog("❌  error1: \(error.localizedDescription)")
+                }
+            })
+            
+            task.resume()
+    }
 
     func sendEventQueue(sourceEHPID:String,eventArray:[Contact],finished: @escaping((_ isSuccess: Bool)->Void)) {
                     
@@ -849,6 +944,7 @@ func getBeaconDevices() -> [DeviceSetType]{
         let requestq = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         center.add(requestq)
         #endif
+        
         let jsonData = try? JSONSerialization.data(withJSONObject:json)
         request.httpBody = jsonData //try? JSONSerialization.data(withJSONObject: data, options: [])
         //            request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")

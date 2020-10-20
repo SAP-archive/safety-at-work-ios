@@ -40,8 +40,8 @@ class Keychain {
     /// - Returns: a result which either contain the error or the object
     public func get<T: Codable>(for key: Key<T>) -> Result<T, KeychainError> {
         var query = self.query(for: key)
-        query[kSecReturnData] = kCFBooleanTrue
-        query[kSecMatchLimit] = kSecMatchLimitOne
+        query[kSecReturnData as String] = kCFBooleanTrue
+        query[kSecMatchLimit as String] = kSecMatchLimitOne
 
         var item: CFTypeRef?
         let status: OSStatus = SecItemCopyMatching(query as CFDictionary, &item)
@@ -78,7 +78,7 @@ class Keychain {
             return .failure(.encodingError(error))
         }
         var query = self.query(for: key)
-        query[kSecValueData] = data
+        query[kSecValueData as String] = data
 
         var status: OSStatus = SecItemCopyMatching(query as CFDictionary, nil)
 
@@ -124,11 +124,11 @@ class Keychain {
     /// helpermethod to construct the keychain query
     /// - Parameter key: key to use
     /// - Returns: the keychain query
-    private func query<T>(for key: Key<T>) -> [CFString: Any] {
-        let query: [CFString: Any] = [
-            kSecClass: kSecClassGenericPassword as String,
-            kSecAttrAccount: key.key,
-            kSecAttrAccessible: kSecAttrAccessibleAfterFirstUnlock,
+    private func query<T>(for key: Key<T>) -> [String: Any] {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword as String,
+            kSecAttrAccount as String: key.key,
+            kSecAttrAccessible as String: kSecAttrAccessibleAfterFirstUnlock,
         ]
         return query
     }
