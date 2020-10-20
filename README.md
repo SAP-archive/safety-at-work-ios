@@ -3,6 +3,8 @@
 
 [![Swift Package Manager compatible](https://img.shields.io/badge/SPM-%E2%9C%93-brightgreen.svg?style=flat)](https://github.com/apple/swift-package-manager) 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/safety-at-work-ios)](https://api.reuse.software/info/github.com/SAP-samples/safety-at-work-ios)
+
 
 
 Heavily based on project DP3T (https://github.com/DP-3T/dp3t-sdk-ios)
