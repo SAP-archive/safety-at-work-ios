@@ -56,7 +56,7 @@ Safety@work has 3 main functionalities:
 
 The app takes advantage on SAP Business Technology Platform mobile services and is built using SAP Business Technology Platform SDK for iOS versione 5.0.4,
 
-Onboarding is developed using SAP CLoud Platform SDK for iOS Assistant
+Onboarding is developed using SAP Business Technology Platform SDK for iOS Assistant
 
 Proxy Class generation for Odata service are developed by SAP Business Technology Platform SDK for iOS Assistant
 
@@ -91,7 +91,7 @@ Project structure
 - [ViewController]  ViewController classes 
 
 
-If you installed backend on Sap Cloud Platform services you have to modify some properties in
+If you installed backend on SAP Business Technology Platform services you have to modify some properties in
 
     OnBoarding/AppParameters.plist 
     -Application identifier
