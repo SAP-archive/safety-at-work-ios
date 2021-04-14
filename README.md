@@ -28,8 +28,8 @@ Table of contents
     - [Main](#main)
     - [Main Infected](#main-infected)
   - [Languages supported](#languages-supported)
-- [SCP Mobile Services app configuration](#scp-mobile-services-app-configuration)
-- [Tutorials for SAP Cloud Platform mobile services and SDK for iOS](#tutorials-for-sap-cloud-platform-mobile-services-and-sdk-for-ios)
+- [BTP Mobile Services app configuration](#btp-mobile-services-app-configuration)
+- [Tutorials for SAP Business Technology Platform mobile services and SDK for iOS](#tutorials-for-sap-business-technology-platform-mobile-services-and-sdk-for-ios)
 - [License](#license)
 <!--te-->
 
@@ -54,17 +54,17 @@ Safety@work has 3 main functionalities:
 2. contact tracing (DP3T heavily based)
 3. iBeacon integration protocol (for real time meeting room and common space monitoring)
 
-The app takes advantage on SAP Cloud Platform mobile services and is built using SAP Cloud Platform SDK for iOS versione 5.0.4,
+The app takes advantage on SAP Business Technology Platform mobile services and is built using SAP Business Technology Platform SDK for iOS versione 5.0.4,
 
 Onboarding is developed using SAP CLoud Platform SDK for iOS Assistant
 
-Proxy Class generation for Odata service are developed by SAP Cloud Platform SDK for iOS Assistant
+Proxy Class generation for Odata service are developed by SAP Business Technology Platform SDK for iOS Assistant
 
 
 ## Prerequisites
 
 The Project takes advantage on classes from DP3T open-source project (folder Sources), 
-dependencies are managed with Swift Package dependencies, you can extract SCP for iOS SDK framework from the Assistant application
+dependencies are managed with Swift Package dependencies, you can extract BTP for iOS SDK framework from the Assistant application
 
 ![Export frameworks](readmeImages/frameworks.png)
 
@@ -85,8 +85,8 @@ Application leverage on:
 Project structure
 
 - [Sources]  DP3T sources 
-- [Proxy Classes]  SAP Cloud Platform SDK for iOS Assistant generated proxy classes
-- [Onboarding] SAP Cloud Platform SDK for iOS Assistant generated onboarding classes
+- [Proxy Classes]  SAP Business Technology Platform SDK for iOS Assistant generated proxy classes
+- [Onboarding] SAP Business Technology Platform SDK for iOS Assistant generated onboarding classes
 - [Networking]  Wrappers classes for Odata Communication
 - [ViewController]  ViewController classes 
 
@@ -101,7 +101,7 @@ and
 
     OnBoarding/ConfigurationProvider.plist 
     -HRphoneNumber (phone number of your own Hr departement)
-    -scpAppId (id of your app on SCP)
+    -scpAppId (id of your app on BTP)
     -host (host of mobile services)
 
 to match your appID or your host.
@@ -172,9 +172,9 @@ In this way on the backend facility administrator knows in real time how many pe
     Italian
     English
 
-SCP Mobile Services app configuration
+BTP Mobile Services app configuration
 =====================================
-On mobile services a new `Native application` must be created and linked to the existing project. Below picture shows the application available within SCP Mobile services.
+On mobile services a new `Native application` must be created and linked to the existing project. Below picture shows the application available within BTP Mobile services.
 
 ![Mobile services apps page](readmeImages/ms01_scpms_main.png)
 
@@ -184,7 +184,7 @@ That application must have following feature assigned:
 
 - **Mobile client log upload** - in order to submit all logs stored in mobile app;
   
-- **Mobile client usage and feedbacks** - necessary to keep track of user activities, within SCP Mobile services, in interacting with the app;
+- **Mobile client usage and feedbacks** - necessary to keep track of user activities, within BTP Mobile services, in interacting with the app;
   
 - **Mobile connectivity** - this feature is the "core" one: it is mandatory to properly configure destinations that point to back-end business logic (see next section for a deep dive into configuration details);
   
@@ -211,7 +211,7 @@ Once accessed the application in the CF Space cockpit, the url can be found in t
 
 ![CV19-tracing back-end xsjs module application](readmeImages/ms05_xsjs_srv_url.png)
 
-Tutorials for SAP Cloud Platform mobile services and SDK for iOS
+Tutorials for SAP Business Technology Platform mobile services and SDK for iOS
 ==============================
 Check out these tutorials and courses for deep-dives into various areas
 * [Mobile Interactive Tutorials](https://www.sap.com/developer/tutorial-navigator/mobile-interactive-tutorials.html)
