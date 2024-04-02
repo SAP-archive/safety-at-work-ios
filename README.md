@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
 # Safety@work for iOS
 ![Safety@Work header](readmeImages/header.png)
 
